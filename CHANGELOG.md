@@ -21,6 +21,7 @@ First version of the repository: the production icons for the Soplos Linux 3.0 a
 - `wallpapers/`, the 29 Soplos Linux wallpapers (`001.jpg` to `029.jpg`, 3840 × 2160), copied from `/usr/share/backgrounds/soplos`.
 - `splash.png`, header image showing the sixteen icons.
 - `README.md` (English), `README.es.md` (Spanish) and this `CHANGELOG.md`.
+- `LICENSE`: GNU General Public License v3.0, the same as the rest of the Soplos Linux projects.
 
 ### Changed
 

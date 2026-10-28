@@ -2,6 +2,16 @@
   <img src="splash.png" alt="Soplos Linux · Artwork — Apps 3.0: sixteen production icons, one family" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://github.com/SoplosLinux/soplos-artworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL%20v3-ff6a12?style=flat-square&labelColor=09090c" alt="License: GPL v3"></a>
+  <img src="https://img.shields.io/badge/Soplos%20Linux-3.0-ff6a12?style=flat-square&labelColor=09090c" alt="Soplos Linux 3.0">
+  <img src="https://img.shields.io/badge/icons-16-ff6a12?style=flat-square&labelColor=09090c" alt="16 icons">
+  <img src="https://img.shields.io/badge/wallpapers-29-ff6a12?style=flat-square&labelColor=09090c" alt="29 wallpapers">
+  <img src="https://img.shields.io/badge/formats-SVG%20%C2%B7%20PNG%20%C2%B7%20PSD-ff6a12?style=flat-square&labelColor=09090c" alt="Formats: SVG, PNG, PSD">
+  <a href="https://github.com/SoplosLinux/soplos-artworks/commits/main"><img src="https://img.shields.io/github/last-commit/SoplosLinux/soplos-artworks?style=flat-square&labelColor=09090c&color=ff6a12" alt="Last commit"></a>
+  <a href="https://github.com/SoplosLinux/soplos-artworks/stargazers"><img src="https://img.shields.io/github/stars/SoplosLinux/soplos-artworks?style=flat-square&labelColor=09090c&color=ff6a12" alt="Stars"></a>
+</p>
+
 # Soplos Linux · Artwork
 
 🇬🇧 **English** · 🇪🇸 [Español](README.es.md)
@@ -73,7 +83,8 @@ soplos-artwork/
 ├── presentación/            HTML presentation (horizontal and vertical)
 ├── README.md
 ├── README.es.md             Spanish version of this README
-└── CHANGELOG.md
+├── CHANGELOG.md
+└── LICENSE                  GNU GPL v3.0
 ```
 
 App names (Store, GRUB Editor, Kernel Installer…) are brand names and are not translated.
@@ -86,3 +97,7 @@ App names (Store, GRUB Editor, Kernel Installer…) are brand names and are not 
 ## Changelog
 
 See the [CHANGELOG](CHANGELOG.md).
+
+## License
+
+This repository is licensed under the **GNU General Public License v3.0**, the same license as the rest of the Soplos Linux projects. See the [LICENSE](LICENSE) file.

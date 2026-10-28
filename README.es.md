@@ -2,6 +2,16 @@
   <img src="splash.png" alt="Soplos Linux · Artwork — Apps 3.0: sixteen production icons, one family" width="100%">
 </p>
 
+<p align="center">
+  <a href="https://github.com/SoplosLinux/soplos-artworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL%20v3-ff6a12?style=flat-square&labelColor=09090c" alt="License: GPL v3"></a>
+  <img src="https://img.shields.io/badge/Soplos%20Linux-3.0-ff6a12?style=flat-square&labelColor=09090c" alt="Soplos Linux 3.0">
+  <img src="https://img.shields.io/badge/icons-16-ff6a12?style=flat-square&labelColor=09090c" alt="16 icons">
+  <img src="https://img.shields.io/badge/wallpapers-29-ff6a12?style=flat-square&labelColor=09090c" alt="29 wallpapers">
+  <img src="https://img.shields.io/badge/formats-SVG%20%C2%B7%20PNG%20%C2%B7%20PSD-ff6a12?style=flat-square&labelColor=09090c" alt="Formats: SVG, PNG, PSD">
+  <a href="https://github.com/SoplosLinux/soplos-artworks/commits/main"><img src="https://img.shields.io/github/last-commit/SoplosLinux/soplos-artworks?style=flat-square&labelColor=09090c&color=ff6a12" alt="Last commit"></a>
+  <a href="https://github.com/SoplosLinux/soplos-artworks/stargazers"><img src="https://img.shields.io/github/stars/SoplosLinux/soplos-artworks?style=flat-square&labelColor=09090c&color=ff6a12" alt="Stars"></a>
+</p>
+
 # Soplos Linux · Artwork
 
 🇬🇧 [English](README.md) · 🇪🇸 **Español**
@@ -71,8 +81,10 @@ soplos-artwork/
 ├── soplos-<app>/            una carpeta por app: .svg, .png, .psd y .vectorcraft
 ├── wallpapers/              los 29 fondos de pantalla de Soplos (001.jpg … 029.jpg)
 ├── presentación/            presentación en HTML (horizontal y vertical)
-├── README.md
-└── CHANGELOG.md
+├── README.md                README en inglés
+├── README.es.md             este README, en español
+├── CHANGELOG.md
+└── LICENSE                  GNU GPL v3.0
 ```
 
 Los nombres de las apps (Store, GRUB Editor, Kernel Installer…) son marca y no se traducen.
@@ -85,3 +97,7 @@ Los nombres de las apps (Store, GRUB Editor, Kernel Installer…) son marca y no
 ## Historial de cambios
 
 Consulta el [CHANGELOG](CHANGELOG.md) (en inglés).
+
+## Licencia
+
+Este repositorio está bajo la **GNU General Public License v3.0**, la misma que el resto de proyectos de Soplos Linux. Consulta el archivo [LICENSE](LICENSE).
