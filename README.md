@@ -4,77 +4,85 @@
 
 # Soplos Linux · Artwork
 
-Arte oficial de las aplicaciones de **Soplos Linux 3.0**: los dieciséis iconos de producción de la familia y la presentación animada que los acompaña.
+🇬🇧 **English** · 🇪🇸 [Español](README.es.md)
 
-Los iconos están pensados para usarse tal cual en el sistema: **no llevan placa** (el cuadrado redondeado oscuro de los iconos antiguos), son transparentes y comparten estilo, paleta y volumen.
+Official artwork of **Soplos Linux**: the sixteen production icons of the 3.0 applications, the animated presentation that goes with them, and the wallpapers of the distro.
 
-## Iconos
+The icons are meant to be used as they are in the system: they **have no backplate** (the dark rounded square of the old icons), they are transparent, and they share the same style, palette and volume.
 
-Cada app tiene su propia carpeta con cuatro archivos:
+## Icons
 
-| Archivo | Para qué sirve |
+Each app has its own folder with four files:
+
+| File | Purpose |
 | --- | --- |
-| `.svg` | Vector sin fondo. Es el formato de producción. |
-| `.png` | 1254 × 1254 px con transparencia. |
-| `.psd` | Capas para retocar en Photocraft o Photoshop. Los grupos con sombra o desenfoque están rasterizados. |
-| `.vectorcraft` | Proyecto original de VectorCraft, para editar el dibujo. |
+| `.svg` | Vector with no background. This is the production format. |
+| `.png` | 1254 × 1254 px with transparency. |
+| `.psd` | Layered file to edit in Photocraft or Photoshop. Groups with shadows or blur are rasterized. |
+| `.vectorcraft` | Original VectorCraft project, to edit the drawing. |
 
-### Las dieciséis apps
+### The sixteen apps
 
-| | App | Qué hace | Carpeta |
+| | App | What it does | Folder |
 | :---: | --- | --- | --- |
-| <img src="soplos-store/soplos-store.png" width="64" alt="Store"> | **Store** | Instala, actualiza y elimina aplicaciones de APT, Flatpak, Snap y AppImage, y aplica firmware con fwupd. | [`soplos-store`](soplos-store) |
-| <img src="soplos-appimage-manager-3.0/soplos-appimage-manager.png" width="64" alt="AppImage Manager"> | **AppImage Manager** | Integra las AppImage en el escritorio y comprueba sus actualizaciones. | [`soplos-appimage-manager-3.0`](soplos-appimage-manager-3.0) |
-| <img src="soplos-grub-editor-3.0/soplos-grub-editor.png" width="64" alt="GRUB Editor"> | **GRUB Editor** | Edita el cargador de arranque sin tocar archivos. | [`soplos-grub-editor-3.0`](soplos-grub-editor-3.0) |
-| <img src="soplos-kernel-installer-3.0/soplos-kernel-installer.png" width="64" alt="Kernel Installer"> | **Kernel Installer** | Descarga, parchea e instala el kernel de Linux. | [`soplos-kernel-installer-3.0`](soplos-kernel-installer-3.0) |
-| <img src="soplos-layout-switcher-3.0/soplos-layout-switcher.png" width="64" alt="Layout Switcher"> | **Layout Switcher** | Cuatro disposiciones de GNOME (Soplos, Dock, Tiling y GNOME) en un clic. | [`soplos-layout-switcher-3.0`](soplos-layout-switcher-3.0) |
-| <img src="soplos-plymouth-manager-3.0/soplos-plymouth-manager.png" width="64" alt="Plymouth Manager"> | **Plymouth Manager** | Gestiona la pantalla de arranque, con vista previa real. | [`soplos-plymouth-manager-3.0`](soplos-plymouth-manager-3.0) |
-| <img src="soplos-repo-selector-3.0/soplos-repo-selector.png" width="64" alt="Repo Selector"> | **Repo Selector** | Repositorios APT, mirrors y claves GPG bajo control. | [`soplos-repo-selector-3.0`](soplos-repo-selector-3.0) |
-| <img src="soplos-sys-cleaner-3.0/soplos-sys-cleaner.png" width="64" alt="Sys Cleaner"> | **Sys Cleaner** | Recupera espacio borrando solo lo que confirmes. | [`soplos-sys-cleaner-3.0`](soplos-sys-cleaner-3.0) |
-| <img src="soplos-system-service-3.0/soplos-system-service.png" width="64" alt="System Service"> | **System Service** | Servicios y temporizadores de systemd sin línea de comandos. | [`soplos-system-service-3.0`](soplos-system-service-3.0) |
-| <img src="soplos-theme-manager-3.0/soplos-theme-manager.png" width="64" alt="Theme Manager"> | **Theme Manager** | Gestor de temas de Tyron (Xfce). | [`soplos-theme-manager-3.0`](soplos-theme-manager-3.0) |
-| <img src="soplos-webapp-manager-3.0/soplos-webapp-manager.png" width="64" alt="WebApp Manager"> | **WebApp Manager** | Convierte cualquier web en una aplicación con perfil aislado. | [`soplos-webapp-manager-3.0`](soplos-webapp-manager-3.0) |
-| <img src="soplos-welcome-3.0/soplos-welcome.png" width="64" alt="Welcome"> | **Welcome** | Bienvenida: actualizar, controladores, seguridad y gaming. | [`soplos-welcome-3.0`](soplos-welcome-3.0) |
-| <img src="soplos-welcome-live-3.0/soplos-welcome-live.png" width="64" alt="Welcome Live"> | **Welcome Live** | Bienvenida de la ISO Live y rescate del sistema. | [`soplos-welcome-live-3.0`](soplos-welcome-live-3.0) |
-| <img src="soplos-linux-installer/soplos-linux-installer.png" width="64" alt="SLI"> | **SLI** | Soplos Linux Installer, el instalador propio que sustituirá a Calamares. | [`soplos-linux-installer`](soplos-linux-installer) |
-| <img src="soplos-gaming-panel/soplos-gaming-panel.png" width="64" alt="Gaming Panel"> | **Gaming Panel** | Panel superpuesto (Ctrl+Shift+G) que controla GameMode en vivo. | [`soplos-gaming-panel`](soplos-gaming-panel) |
-| <img src="soplos-look-manager/soplos-look-manager.png" width="64" alt="Look Manager"> | **Look Manager** | Temas y disposición para Tyson (Plasma). | [`soplos-look-manager`](soplos-look-manager) |
+| <img src="soplos-store/soplos-store.png" width="64" alt="Store"> | **Store** | Installs, updates and removes APT, Flatpak, Snap and AppImage apps, and applies firmware updates with fwupd. | [`soplos-store`](soplos-store) |
+| <img src="soplos-appimage-manager-3.0/soplos-appimage-manager.png" width="64" alt="AppImage Manager"> | **AppImage Manager** | Integrates AppImages into the desktop and checks for their updates. | [`soplos-appimage-manager-3.0`](soplos-appimage-manager-3.0) |
+| <img src="soplos-grub-editor-3.0/soplos-grub-editor.png" width="64" alt="GRUB Editor"> | **GRUB Editor** | Edits the bootloader without touching any file by hand. | [`soplos-grub-editor-3.0`](soplos-grub-editor-3.0) |
+| <img src="soplos-kernel-installer-3.0/soplos-kernel-installer.png" width="64" alt="Kernel Installer"> | **Kernel Installer** | Downloads, patches and installs the Linux kernel. | [`soplos-kernel-installer-3.0`](soplos-kernel-installer-3.0) |
+| <img src="soplos-layout-switcher-3.0/soplos-layout-switcher.png" width="64" alt="Layout Switcher"> | **Layout Switcher** | Four GNOME layouts (Soplos, Dock, Tiling and GNOME) in one click. | [`soplos-layout-switcher-3.0`](soplos-layout-switcher-3.0) |
+| <img src="soplos-plymouth-manager-3.0/soplos-plymouth-manager.png" width="64" alt="Plymouth Manager"> | **Plymouth Manager** | Manages the boot splash screen, with a real preview. | [`soplos-plymouth-manager-3.0`](soplos-plymouth-manager-3.0) |
+| <img src="soplos-repo-selector-3.0/soplos-repo-selector.png" width="64" alt="Repo Selector"> | **Repo Selector** | APT repositories, mirrors and GPG keys under control. | [`soplos-repo-selector-3.0`](soplos-repo-selector-3.0) |
+| <img src="soplos-sys-cleaner-3.0/soplos-sys-cleaner.png" width="64" alt="Sys Cleaner"> | **Sys Cleaner** | Frees up space by deleting only what you confirm. | [`soplos-sys-cleaner-3.0`](soplos-sys-cleaner-3.0) |
+| <img src="soplos-system-service-3.0/soplos-system-service.png" width="64" alt="System Service"> | **System Service** | systemd services and timers without the command line. | [`soplos-system-service-3.0`](soplos-system-service-3.0) |
+| <img src="soplos-theme-manager-3.0/soplos-theme-manager.png" width="64" alt="Theme Manager"> | **Theme Manager** | Theme manager for Tyron (Xfce). | [`soplos-theme-manager-3.0`](soplos-theme-manager-3.0) |
+| <img src="soplos-webapp-manager-3.0/soplos-webapp-manager.png" width="64" alt="WebApp Manager"> | **WebApp Manager** | Turns any website into an app with its own isolated profile. | [`soplos-webapp-manager-3.0`](soplos-webapp-manager-3.0) |
+| <img src="soplos-welcome-3.0/soplos-welcome.png" width="64" alt="Welcome"> | **Welcome** | Welcome app: updates, drivers, security and gaming. | [`soplos-welcome-3.0`](soplos-welcome-3.0) |
+| <img src="soplos-welcome-live-3.0/soplos-welcome-live.png" width="64" alt="Welcome Live"> | **Welcome Live** | Welcome app for the Live ISO, and system rescue. | [`soplos-welcome-live-3.0`](soplos-welcome-live-3.0) |
+| <img src="soplos-linux-installer/soplos-linux-installer.png" width="64" alt="SLI"> | **SLI** | Soplos Linux Installer, the in-house installer that will replace Calamares. | [`soplos-linux-installer`](soplos-linux-installer) |
+| <img src="soplos-gaming-panel/soplos-gaming-panel.png" width="64" alt="Gaming Panel"> | **Gaming Panel** | Overlay panel (Ctrl+Shift+G) that controls GameMode live. | [`soplos-gaming-panel`](soplos-gaming-panel) |
+| <img src="soplos-look-manager/soplos-look-manager.png" width="64" alt="Look Manager"> | **Look Manager** | Themes and layout for Tyson (Plasma). | [`soplos-look-manager`](soplos-look-manager) |
 
-Los escritorios de Soplos son **Boro** (GNOME), **Tyron** (Xfce) y **Tyson** (Plasma). SLI y Look Manager son apps nuevas y la presentación las marca como «Próximamente».
+The Soplos desktops are **Boro** (GNOME), **Tyron** (Xfce) and **Tyson** (Plasma). SLI and Look Manager are new apps, and the presentation marks them as "Coming soon".
 
-## Presentación
+## Presentation
 
-En [`presentación/`](presentaci%C3%B3n) hay una presentación animada, en HTML, que recorre las dieciséis apps con su icono. No necesita instalar nada: se abre en el navegador.
+The [`presentación/`](presentaci%C3%B3n) folder holds an animated HTML presentation that walks through the sixteen apps with their icons. Nothing to install: just open it in a browser.
 
-> **Por ahora la presentación solo está en español.** Está previsto integrarla en la web oficial de Soplos y traducirla a los idiomas de las distros: inglés, alemán, francés, italiano, portugués, rumano y ruso.
+> **For now the presentation is available in Spanish only.** It is planned to be integrated into the official Soplos website and translated into the languages of the distros: English, German, French, Italian, Portuguese, Romanian and Russian.
 
-| Archivo | Contenido |
+| File | Contents |
 | --- | --- |
-| [`index.html`](presentaci%C3%B3n/index.html) | Versión horizontal (16:9). Navegación con `←` `→`, `Espacio` para pausar, `G` para el índice y `F` para pantalla completa. |
-| [`vertical.html`](presentaci%C3%B3n/vertical.html) | Versión vertical (9:16), pensada para grabarla en vídeo para redes sociales. Tecla `R` para el modo grabación. |
-| [`textos.js`](presentaci%C3%B3n/textos.js) | Textos de la versión vertical, separados por idioma (hoy solo `es`). |
-| [`imagenes/`](presentaci%C3%B3n/imagenes) | Los dieciséis iconos en PNG, compartidos por las dos versiones. |
+| [`index.html`](presentaci%C3%B3n/index.html) | Horizontal version (16:9). Navigate with `←` `→`, `Space` to pause, `G` for the index and `F` for fullscreen. |
+| [`vertical.html`](presentaci%C3%B3n/vertical.html) | Vertical version (9:16), made for recording video for social media. Press `R` for recording mode. |
+| [`textos.js`](presentaci%C3%B3n/textos.js) | Texts of the vertical version, split by language (only `es` today). |
+| [`imagenes/`](presentaci%C3%B3n/imagenes) | The sixteen icons as PNG, shared by both versions. |
 
-`vertical.html` ya lee sus textos de `textos.js` y acepta `?lang=xx`, con español como idioma de reserva. `index.html` sigue con los textos dentro del propio archivo.
+`vertical.html` already reads its texts from `textos.js` and accepts `?lang=xx`, falling back to Spanish. `index.html` still keeps its texts inside the file itself.
 
-## Estructura
+## Wallpapers
+
+The [`wallpapers/`](wallpapers) folder holds the 29 wallpapers shipped with Soplos Linux, numbered `001.jpg` to `029.jpg`. All of them are JPG at 3840 × 2160 px (4K, 16:9). They are copies of the ones installed in `/usr/share/backgrounds/soplos`.
+
+## Structure
 
 ```
 soplos-artwork/
-├── splash.png               imagen de cabecera de este README
-├── soplos-<app>/            una carpeta por app: .svg, .png, .psd y .vectorcraft
-├── presentación/            presentación en HTML (horizontal y vertical)
+├── splash.png               header image of this README
+├── soplos-<app>/            one folder per app: .svg, .png, .psd and .vectorcraft
+├── wallpapers/              the 29 Soplos wallpapers (001.jpg … 029.jpg)
+├── presentación/            HTML presentation (horizontal and vertical)
 ├── README.md
+├── README.es.md             Spanish version of this README
 └── CHANGELOG.md
 ```
 
-Los nombres de las apps (Store, GRUB Editor, Kernel Installer…) son marca y no se traducen.
+App names (Store, GRUB Editor, Kernel Installer…) are brand names and are not translated.
 
-## Cómo se hicieron
+## How they were made
 
-1. Se dibuja el icono en **VectorCraft** y se exporta como SVG sin fondo.
-2. Se abre ese SVG en **Photocraft**, que genera el PSD con capas y el PNG.
+1. The icon is drawn in **VectorCraft** and exported as an SVG with no background.
+2. That SVG is opened in **Photocraft**, which produces the layered PSD and the PNG.
 
-## Historial de cambios
+## Changelog
 
-Consulta el [CHANGELOG](CHANGELOG.md).
+See the [CHANGELOG](CHANGELOG.md).

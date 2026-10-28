@@ -1,33 +1,34 @@
 # Changelog
 
-Todos los cambios importantes de este repositorio se documentan en este archivo.
+All notable changes to this repository are documented in this file.
 
-El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
+The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [3.0.0] - 2026-10-28
 
-Primera versión del repositorio: los iconos de producción de las apps de Soplos Linux 3.0 y su presentación.
+First version of the repository: the production icons for the Soplos Linux 3.0 apps, their presentation and the distro wallpapers.
 
-### Añadido
+### Added
 
-- Dieciséis iconos de producción, sin placa, cada uno en su carpeta con `.svg`, `.png` (1254 × 1254, con transparencia), `.psd` con capas y `.vectorcraft`:
-  - Apps existentes: Store, AppImage Manager, GRUB Editor, Kernel Installer, Layout Switcher, Plymouth Manager, Repo Selector, Sys Cleaner, System Service, Theme Manager, WebApp Manager, Welcome y Welcome Live.
-  - Apps nuevas: **SLI** (Soplos Linux Installer, sustituto de Calamares), **Gaming Panel** y **Look Manager** (temas y disposición para Tyson/Plasma).
-- Presentación animada en HTML, en `presentación/`:
-  - `index.html`, versión horizontal.
-  - `vertical.html`, versión 9:16 para grabar en vídeo para redes sociales.
-  - `textos.js`, textos de la versión vertical separados por idioma.
-  - `imagenes/`, los dieciséis iconos en PNG.
-- `splash.png`, imagen de cabecera con los dieciséis iconos.
-- `README.md` y este `CHANGELOG.md`.
+- Sixteen production icons, with no backplate, each in its own folder with `.svg`, `.png` (1254 × 1254, transparent), layered `.psd` and `.vectorcraft`:
+  - Existing apps: Store, AppImage Manager, GRUB Editor, Kernel Installer, Layout Switcher, Plymouth Manager, Repo Selector, Sys Cleaner, System Service, Theme Manager, WebApp Manager, Welcome and Welcome Live.
+  - New apps: **SLI** (Soplos Linux Installer, the Calamares replacement), **Gaming Panel** and **Look Manager** (themes and layout for Tyson/Plasma).
+- Animated HTML presentation, in `presentación/`:
+  - `index.html`, horizontal version.
+  - `vertical.html`, 9:16 version for recording video for social media.
+  - `textos.js`, texts of the vertical version, split by language.
+  - `imagenes/`, the sixteen icons as PNG.
+- `wallpapers/`, the 29 Soplos Linux wallpapers (`001.jpg` to `029.jpg`, 3840 × 2160), copied from `/usr/share/backgrounds/soplos`.
+- `splash.png`, header image showing the sixteen icons.
+- `README.md` (English), `README.es.md` (Spanish) and this `CHANGELOG.md`.
 
-### Cambiado
+### Changed
 
-- La carpeta de trabajo pasa a llamarse `soplos-artwork` y se mueve a `Documentos/Projects`.
-- La carpeta de Software Center pasa a llamarse `soplos-store`.
+- The working folder is now called `soplos-artwork` and lives in `Documentos/Projects`.
+- The Software Center folder is now called `soplos-store`.
 
-### Notas
+### Notes
 
-- La presentación solo está disponible en español. Queda pendiente traducirla a inglés, alemán, francés, italiano, portugués, rumano y ruso cuando se integre en la web oficial.
-- `index.html` mantiene sus textos dentro del propio archivo; al integrarla en la web habrá que pasarlos a `textos.js`.
-- Los iconos no se han comprobado todavía a 32 px ni sobre fondos claros y oscuros reales.
+- The presentation is available in Spanish only. It still has to be translated into English, German, French, Italian, Portuguese, Romanian and Russian when it is integrated into the official website.
+- `index.html` keeps its texts inside the file itself; when it is integrated into the website they will have to be moved to `textos.js`.
+- The icons have not yet been checked at 32 px or on real light and dark backgrounds.
