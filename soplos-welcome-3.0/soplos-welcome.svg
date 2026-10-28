@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="227" y="1052" width="784" height="196" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="20"/></filter>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="241" y="374" width="762" height="448" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dx="0" dy="6" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.4"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="622" y1="400" x2="622" y2="796" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34343a"/>
+      <stop offset="1" stop-color="#141417"/>
+    </linearGradient>
+    <filter id="filter-3" filterUnits="userSpaceOnUse" x="481" y="427" width="422" height="162" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="13"/></filter>
+    <filter id="filter-4" filterUnits="userSpaceOnUse" x="228" y="53" width="811" height="558" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.45"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-2" x1="437.952" y1="-6.699" x2="829.048" y2="670.699" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#ffa21f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="712" y1="92" x2="712" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9a1f"/>
+      <stop offset="1" stop-color="#ff6a12"/>
+    </linearGradient>
+    <filter id="filter-5" filterUnits="userSpaceOnUse" x="205" y="585" width="811" height="558" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.45"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-4" x1="806.048" y1="1202.699" x2="414.952" y2="525.301" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffa21f"/>
+      <stop offset="1" stop-color="#ff6a12"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="532" y1="796" x2="532" y2="1104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f2491a"/>
+      <stop offset="1" stop-color="#d0301a"/>
+    </linearGradient>
+  </defs>
+  <title>soplos-welcome</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="Resplandor">
+    <g filter="url(#filter-1)">
+      <path d="M289 1150 C289 1130.118 436.746 1114 619 1114 C801.254 1114 949 1130.118 949 1150 C949 1169.882 801.254 1186 619 1186 C436.746 1186 289 1169.882 289 1150 Z" fill="#ff7a00" opacity="0.4"/>
+    </g>
+  </g>
+  <g id="Hueco">
+    <g filter="url(#filter-2)">
+      <path d="M267 572 L624 400 L977 618 L624 796 Z" fill="url(#linear-gradient-1)"/>
+    </g>
+    <g filter="url(#filter-3)">
+      <path d="M522 508 C522 485.909 598.112 468 692 468 C785.888 468 862 485.909 862 508 C862 530.091 785.888 548 692 548 C598.112 548 522 530.091 522 508 Z" fill="#ffb52e" opacity="0.7"/>
+    </g>
+    <path d="M552 490 L570 532" fill="#ffb52e" stroke="#ffc21f" stroke-width="14" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M682 470 L676 518" fill="#ffb52e" stroke="#ffc21f" stroke-width="14" stroke-linecap="round" stroke-miterlimit="10"/>
+    <path d="M792 515 L770 550" fill="#ffb52e" stroke="#ffc21f" stroke-width="14" stroke-linecap="round" stroke-miterlimit="10"/>
+  </g>
+  <g id="Cinta_superior" data-name="Cinta superior">
+    <g filter="url(#filter-4)">
+      <path d="M267 332 L710 92 L994 235 L1000 265 L967 272 L942 272 L830 374 L800 312 L624 400 L267 572 Z" fill="url(#linear-gradient-2)"/>
+    </g>
+    <path d="M710 92 L800 312 L624 400 Z" fill="url(#linear-gradient-3)"/>
+  </g>
+  <g id="Cinta_inferior" data-name="Cinta inferior">
+    <g filter="url(#filter-5)">
+      <path d="M977 864 L534 1104 L250 961 L244 931 L277 924 L302 924 L414 822 L444 884 L620 796 L977 624 Z" fill="url(#linear-gradient-4)"/>
+    </g>
+    <path d="M534 1104 L444 884 L620 796 Z" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

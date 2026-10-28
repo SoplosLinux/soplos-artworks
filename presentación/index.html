@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soplos Linux · Aplicaciones 3.0</title>
+<style>
+  :root {
+    --bg: #09090c;
+    --fg: #f7efe4;
+    --mut: #a8a196;
+    --o1: #ffc21f;
+    --o2: #ff8a14;
+    --o3: #ff4a14;
+    --a1: #ffc21f;
+    --a2: #ff6a12;
+    --ease: cubic-bezier(.2, .9, .2, 1);
+    --pop: cubic-bezier(.2, 1.25, .3, 1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: var(--bg); color: var(--fg); overflow: hidden;
+    font-family: Inter, "Segoe UI", "Helvetica Neue", Ubuntu, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+  #fx { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .grid-bg { position: fixed; inset: -2px; z-index: 0; pointer-events: none; opacity: .55;
+    background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 64px 64px; mask-image: radial-gradient(ellipse at 50% 50%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 50%, #000 20%, transparent 75%);
+    animation: gridMove 18s linear infinite; }
+  @keyframes gridMove { to { background-position: 64px 64px; } }
+
+  /* ---------- escenas ---------- */
+  .scene { position: fixed; inset: 0; z-index: 1; visibility: hidden; opacity: 0;
+    display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 2vw;
+    padding: 9vh 7vw 14vh; transition: opacity .45s ease, visibility 0s .45s; }
+  .scene.on { visibility: visible; opacity: 1; transition: opacity .5s ease .2s, visibility 0s; }
+  .bg { position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(60vmax 60vmax at 78% 50%, color-mix(in srgb, var(--a1) 30%, transparent), transparent 62%),
+      radial-gradient(48vmax 48vmax at 12% 108%, color-mix(in srgb, var(--a2) 24%, transparent), transparent 62%); }
+  .scene.on .bg { animation: bgPulse 7s ease-in-out infinite alternate; }
+  @keyframes bgPulse { from { transform: scale(1); opacity: .85; } to { transform: scale(1.08); opacity: 1; } }
+
+  .ghost { position: absolute; left: 5vw; bottom: 8vh; z-index: -1; font-weight: 900; line-height: .8; letter-spacing: -.06em;
+    font-size: clamp(160px, 34vw, 520px); color: transparent; -webkit-text-stroke: 2px rgba(255,255,255,.07); user-select: none; }
+  .scene.on .ghost { animation: ghostIn 1.4s var(--ease) .1s both; }
+  @keyframes ghostIn { from { transform: translateX(-12vw); opacity: 0; } to { transform: none; opacity: 1; } }
+
+  .copy { position: relative; max-width: 780px; }
+  .kicker { display: inline-flex; align-items: center; gap: 12px; font-size: clamp(11px, 1.05vw, 15px); font-weight: 700;
+    letter-spacing: .28em; text-transform: uppercase; color: var(--a1); }
+  .kicker .dot { width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--a1), var(--a2)); box-shadow: 0 0 18px var(--a1); }
+  .kicker .bar { width: 0; height: 2px; background: linear-gradient(90deg, var(--a1), transparent); }
+  .scene.on .kicker { animation: fadeUp .7s var(--ease) .15s both; }
+  .scene.on .kicker .bar { animation: grow 1s var(--ease) .5s both; }
+  @keyframes grow { to { width: 70px; } }
+
+  .title { margin: 1.6vh 0 2.4vh; font-weight: 900; letter-spacing: -.045em; line-height: .94;
+    font-size: clamp(46px, 8.4vw, 148px); }
+  .title .w { display: inline-block; overflow: hidden; padding: .06em .04em .1em 0; margin-right: .16em; vertical-align: top; }
+  .title .l { display: inline-block; transform: translateY(115%) rotate(6deg); opacity: 0;
+    background: linear-gradient(180deg, #fff 10%, color-mix(in srgb, var(--a1) 85%, #fff) 70%, var(--a2));
+    -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .scene.on .title .l { animation: rise .95s var(--ease) both; animation-delay: calc(.3s + var(--i) * .045s); }
+  @keyframes rise { to { transform: none; opacity: 1; } }
+
+  .tag { font-size: clamp(18px, 2.15vw, 34px); font-weight: 600; line-height: 1.22; max-width: 22em; color: #fff3df; }
+  .tag b { font-weight: 800; background: linear-gradient(90deg, var(--a1), var(--a2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .scene.on .tag { animation: fadeUp .9s var(--ease) .75s both; }
+  .desc { margin-top: 1.6vh; font-size: clamp(13px, 1.25vw, 19px); line-height: 1.5; max-width: 38em; color: var(--mut); }
+  .scene.on .desc { animation: fadeUp .9s var(--ease) .95s both; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 3vh; }
+  .chips li { padding: .6em 1.1em; border-radius: 999px; font-size: clamp(12px, 1.1vw, 16px); font-weight: 600; color: #ffe9c9;
+    border: 1px solid color-mix(in srgb, var(--a1) 45%, transparent); background: color-mix(in srgb, var(--a2) 14%, rgba(255,255,255,.03));
+    backdrop-filter: blur(6px); opacity: 0; transform: scale(.6); }
+  .scene.on .chips li { animation: popIn .6s var(--pop) both; animation-delay: calc(1.05s + var(--i) * .11s); }
+  @keyframes popIn { to { opacity: 1; transform: none; } }
+  .badge { display: inline-block; margin-left: 18px; padding: .5em 1.1em; border-radius: 999px; font-size: clamp(11px, 1.1vw, 16px); line-height: 1; vertical-align: middle; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+    color: #1a0d03; background: linear-gradient(90deg, var(--a1), var(--a2)); box-shadow: 0 0 24px color-mix(in srgb, var(--a1) 60%, transparent); }
+
+  /* ---------- icono ---------- */
+  .art { position: relative; display: grid; place-items: center; aspect-ratio: 1; width: min(100%, 62vh, 44vw); justify-self: center;
+    transform: translate3d(calc(var(--mx, 0) * 24px), calc(var(--my, 0) * 18px), 0); transition: transform .25s ease-out; }
+  .art > * { grid-area: 1 / 1; }
+  .icon { width: 82%; height: 82%; object-fit: contain; position: relative; z-index: 3; opacity: 0;
+    filter: drop-shadow(0 34px 60px color-mix(in srgb, var(--a2) 55%, transparent)); }
+  .scene.on .icon { animation: iconIn 1.25s var(--pop) .2s both, float 5.5s ease-in-out 1.5s infinite; }
+  @keyframes iconIn {
+    0% { opacity: 0; transform: scale(.15) rotate(-28deg) translateY(90px); filter: blur(22px) drop-shadow(0 0 0 transparent); }
+    60% { opacity: 1; }
+    100% { opacity: 1; transform: none; filter: blur(0) drop-shadow(0 34px 60px color-mix(in srgb, var(--a2) 55%, transparent)); } }
+  @keyframes float { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-2.2%) rotate(1.6deg); } }
+
+  .halo { width: 74%; height: 74%; border-radius: 50%; z-index: 1; filter: blur(46px); opacity: 0;
+    background: radial-gradient(circle, var(--a1), var(--a2) 55%, transparent 72%); }
+  .scene.on .halo { animation: haloIn 1.4s ease .2s both, haloPulse 4s ease-in-out 1.6s infinite alternate; }
+  @keyframes haloIn { to { opacity: .55; } }
+  @keyframes haloPulse { from { transform: scale(.92); } to { transform: scale(1.1); } }
+
+  .ring { border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--a1) 40%, transparent); z-index: 2; opacity: 0; transform: scale(.3); }
+  .ring.r1 { width: 94%; height: 94%; }
+  .ring.r2 { width: 110%; height: 110%; border-style: dashed; border-color: color-mix(in srgb, var(--a2) 38%, transparent); }
+  .ring.r3 { width: 128%; height: 128%; border-color: color-mix(in srgb, var(--a1) 16%, transparent); }
+  .scene.on .ring { animation: ringIn 1.1s var(--ease) both; }
+  .scene.on .ring.r1 { animation-delay: .35s; }
+  .scene.on .ring.r2 { animation: ringIn 1.1s var(--ease) .5s both, spin 40s linear 1.6s infinite; }
+  .scene.on .ring.r3 { animation-delay: .65s; }
+  @keyframes ringIn { to { opacity: 1; transform: scale(1); } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .orbit { border-radius: 50%; z-index: 4; pointer-events: none; opacity: 0; }
+  .orbit i { position: absolute; top: -7px; left: 50%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%;
+    background: linear-gradient(135deg, #fff, var(--a1)); box-shadow: 0 0 20px 4px var(--a1); }
+  .orbit.o1 { width: 100%; height: 100%; }
+  .orbit.o2 { width: 118%; height: 118%; }
+  .orbit.o2 i { width: 9px; height: 9px; top: -4px; margin-left: -4px; background: var(--a2); box-shadow: 0 0 16px 3px var(--a2); }
+  .scene.on .orbit { opacity: 1; transition: opacity .6s ease 1.2s; }
+  .scene.on .orbit.o1 { animation: spin 9s linear 1.2s infinite; }
+  .scene.on .orbit.o2 { animation: spin 14s linear 1.2s infinite reverse; }
+
+  /* ---------- intro ---------- */
+  .intro { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .intro .copy { max-width: 1100px; }
+  .intro .title { font-size: clamp(64px, 15vw, 270px); line-height: .86; margin: 2vh 0 2vh; }
+  .intro .title .w { margin-right: .12em; }
+  .intro .title .small .l { font-size: .5em; }
+  .intro .tag { margin: 0 auto; max-width: 28em; }
+  .marq { position: absolute; left: 0; right: 0; z-index: -1; display: flex; gap: 3vw; width: max-content; opacity: .2; filter: blur(1.5px); }
+  .marq img { width: 15vh; height: 15vh; object-fit: contain; }
+  .marq.m1 { top: 6vh; animation: marqL 50s linear infinite; }
+  .marq.m2 { bottom: 12vh; animation: marqR 60s linear infinite; }
+  @keyframes marqL { to { transform: translateX(-50%); } }
+  @keyframes marqR { from { transform: translateX(-50%); } to { transform: none; } }
+  .start { margin-top: 4vh; display: inline-flex; align-items: center; gap: 12px; padding: .9em 1.8em; border-radius: 999px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+    font-size: clamp(12px, 1.1vw, 16px); color: #1a0d03; background: linear-gradient(90deg, var(--o1), var(--o2)); box-shadow: 0 10px 50px rgba(255,138,20,.45); }
+  .start:hover { transform: translateY(-2px) scale(1.03); }
+  .scene.on .start { animation: popIn .7s var(--pop) 1.5s both; opacity: 0; transform: scale(.6); }
+
+  /* ---------- final ---------- */
+  .outro { grid-template-columns: 1fr; text-align: center; justify-items: center; align-content: center; gap: 3vh; }
+  .outro .title { font-size: clamp(48px, 9vw, 150px); margin: 0; }
+  .wall { display: grid; grid-template-columns: repeat(8, 1fr); gap: clamp(8px, 1.4vw, 22px); width: min(92vw, 1100px); }
+  .wall img { width: 100%; aspect-ratio: 1; object-fit: contain; opacity: 0; transform: scale(.2) rotate(-20deg); cursor: pointer; transition: filter .3s; filter: drop-shadow(0 14px 22px rgba(255,120,20,.25)); }
+  .wall img:hover { filter: drop-shadow(0 14px 34px rgba(255,170,40,.7)); }
+  .scene.on .wall img { animation: popIn .7s var(--pop) both, bob 5s ease-in-out infinite; animation-delay: calc(.4s + var(--i) * .06s), calc(1.6s + var(--i) * .2s); }
+  @keyframes bob { 0%,100% { translate: 0 0; } 50% { translate: 0 -6px; } }
+  .again { padding: .8em 1.6em; border-radius: 999px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: clamp(11px, 1vw, 14px);
+    border: 1px solid rgba(255,194,31,.5); color: var(--o1); }
+  .again:hover { background: rgba(255,194,31,.12); }
+
+  /* ---------- cortina de transicion ---------- */
+  .wipe { position: fixed; inset: 0; z-index: 20; pointer-events: none; overflow: hidden; }
+  .wipe i { position: absolute; top: -10%; bottom: -10%; left: -45%; width: 38%; transform: skewX(-14deg) translateX(0); }
+  .wipe i:nth-child(1) { background: #1a0d03; }
+  .wipe i:nth-child(2) { background: linear-gradient(90deg, var(--o3), var(--o2)); }
+  .wipe i:nth-child(3) { background: linear-gradient(90deg, var(--o2), var(--o1)); }
+  .wipe i:nth-child(4) { background: #09090c; }
+  .wipe.go i { animation: sweep .95s cubic-bezier(.7, 0, .25, 1) both; }
+  .wipe.go i:nth-child(2) { animation-delay: .05s; }
+  .wipe.go i:nth-child(3) { animation-delay: .1s; }
+  .wipe.go i:nth-child(4) { animation-delay: .15s; }
+  @keyframes sweep { to { transform: skewX(-14deg) translateX(520%); } }
+
+  /* ---------- HUD ---------- */
+  .brand { position: fixed; z-index: 30; top: 3.4vh; left: 3vw; display: flex; align-items: center; gap: 12px; font-size: clamp(10px, .95vw, 13px);
+    letter-spacing: .3em; font-weight: 800; text-transform: uppercase; color: #ffe9c9; }
+  .brand b { width: 30px; height: 3px; background: linear-gradient(90deg, var(--o1), var(--o3)); display: inline-block; border-radius: 2px; }
+  .hint { position: fixed; z-index: 30; top: 3.4vh; right: 3vw; font-size: clamp(10px, .85vw, 12px); letter-spacing: .12em; color: var(--mut); text-transform: uppercase; }
+  .hint kbd { font: inherit; padding: .15em .55em; border: 1px solid rgba(255,255,255,.2); border-radius: 6px; margin: 0 2px; color: #ffe9c9; }
+  .hud { position: fixed; z-index: 30; left: 3vw; right: 3vw; bottom: 3.4vh; display: flex; align-items: center; gap: 20px; }
+  .count { font-variant-numeric: tabular-nums; font-weight: 800; letter-spacing: .08em; font-size: clamp(13px, 1.2vw, 18px); min-width: 5.2em; }
+  .count em { font-style: normal; color: var(--mut); font-weight: 600; }
+  .segs { flex: 1; display: flex; gap: 4px; height: 22px; align-items: center; }
+  .seg { flex: 1; height: 4px; border-radius: 2px; background: rgba(255,255,255,.14); position: relative; overflow: hidden; cursor: pointer; transition: height .2s, background .2s; }
+  .seg:hover { height: 10px; background: rgba(255,255,255,.28); }
+  .seg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--o1), var(--o3)); transform-origin: left; transform: scaleX(var(--p, 0)); }
+  .ctl { display: flex; gap: 6px; }
+  .ctl button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); display: grid; place-items: center; transition: background .2s, transform .2s; }
+  .ctl button:hover { background: rgba(255,194,31,.16); transform: scale(1.08); }
+  .ctl svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .overview { position: fixed; inset: 0; z-index: 40; background: rgba(9,9,12,.92); backdrop-filter: blur(16px); display: none; place-items: center; padding: 6vh 6vw; }
+  .overview.on { display: grid; }
+  .overview .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; width: min(1200px, 100%); max-height: 100%; overflow: auto; }
+  .card { text-align: center; padding: 14px 10px 12px; border-radius: 18px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.03); transition: transform .2s, border-color .2s, background .2s; }
+  .card:hover { transform: translateY(-4px); border-color: var(--o2); background: rgba(255,138,20,.1); }
+  .card img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+  .card span { display: block; margin-top: 6px; font-size: 13px; font-weight: 700; }
+
+  @media (max-width: 900px) {
+    .scene { grid-template-columns: 1fr; grid-template-rows: auto auto; align-content: center; padding: 11vh 7vw 14vh; text-align: center; justify-items: center; }
+    .art { order: -1; width: min(52vw, 34vh); }
+    .copy { max-width: 100%; }
+    .chips { justify-content: center; }
+    .title { font-size: clamp(40px, 12vw, 90px); }
+    .hint { display: none; }
+    .wall { grid-template-columns: repeat(4, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<canvas id="fx"></canvas>
+<div id="stage"></div>
+<div class="wipe" id="wipe"><i></i><i></i><i></i><i></i></div>
+
+<div class="brand"><b></b>Soplos Linux · Apps 3.0</div>
+<div class="hint"><kbd>←</kbd><kbd>→</kbd> navegar · <kbd>Espacio</kbd> pausa · <kbd>G</kbd> índice · <kbd>F</kbd> pantalla completa</div>
+<div class="hud">
+  <div class="count" id="count">00 <em>/ 17</em></div>
+  <div class="segs" id="segs"></div>
+  <div class="ctl">
+    <button id="bPrev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button id="bPlay" aria-label="Pausa"><svg viewBox="0 0 24 24" id="icoPause"><path d="M9 5v14M15 5v14"/></svg></button>
+    <button id="bNext" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    <button id="bGrid" aria-label="Índice"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg></button>
+  </div>
+</div>
+<div class="overview" id="overview"><div class="cards" id="cards"></div></div>
+
+<script>
+(() => {
+  // [carpeta de icono, nombre, categoría, titular (con <b>), descripción, chips, color 1, color 2, etiqueta]
+  const APPS = [
+    ['store', 'Store', 'Software', 'Todo el software, <b>en un solo lugar</b>.',
+      'Encuentra, instala, actualiza y elimina aplicaciones de APT, Flatpak, Snap y AppImage, y aplica actualizaciones de firmware con fwupd.',
+      ['APT · Flatpak · Snap', 'AppStream y Flathub', 'Firmware con fwupd'], '#ffc21f', '#ff6a12'],
+    ['appimage-manager', 'AppImage Manager', 'Software', 'Tus AppImage, <b>integradas en el escritorio</b>.',
+      'Las mueve a ~/AppImages, extrae su icono, crea la entrada de menú y comprueba actualizaciones en GitHub, GitLab o Codeberg.',
+      ['Entrada de menú', 'Icono y metadatos', 'Actualizaciones'], '#ffb52e', '#ff7a12'],
+    ['grub-editor', 'GRUB Editor', 'Arranque', 'El cargador de arranque, <b>sin tocar un archivo</b>.',
+      'Elige la entrada por defecto y el tiempo de espera, edita los parámetros del kernel y cambia el aspecto del menú.',
+      ['Parámetros del kernel', 'Temas y fondos', 'Colores y fuentes'], '#ff9a1f', '#ff5a14'],
+    ['kernel-installer', 'Kernel Installer', 'Sistema', 'Descarga, parchea <b>e instala el kernel</b>.',
+      'Un asistente gráfico para llevar el kernel de Linux desde el código fuente hasta tu arranque.',
+      ['Descargar', 'Parchear', 'Compilar e instalar'], '#ffc21f', '#ff7a12'],
+    ['layout-switcher', 'Layout Switcher', 'Escritorio · Boro', 'Cuatro escritorios GNOME, <b>un solo clic</b>.',
+      'Soplos, Dock, Tiling y GNOME. Instala las extensiones que faltan y aplica los ajustes de cada disposición.',
+      ['Soplos', 'Dock', 'Tiling', 'GNOME'], '#ffd23f', '#ff6a12'],
+    ['plymouth-manager', 'Plymouth Manager', 'Arranque', 'La pantalla de arranque, <b>a tu gusto</b>.',
+      'Galería de temas con vista previa real, instalación desde archivo y borrado de los que ya no quieres.',
+      ['Vista previa real', 'Instalar desde archivo', 'X11 y Wayland'], '#ffb52e', '#ff5a14'],
+    ['repo-selector', 'Repo Selector', 'Sistema', 'Repositorios APT <b>bajo control</b>.',
+      'Activa o desactiva repositorios, moderniza los .list a DEB822, encuentra el mirror más rápido con una prueba real y gestiona las claves GPG.',
+      ['DEB822', 'Prueba de velocidad', 'Claves GPG'], '#ffc21f', '#ff6a12'],
+    ['sys-cleaner', 'Sys Cleaner', 'Mantenimiento', 'Recupera espacio, <b>solo lo que confirmes</b>.',
+      'Busca cachés, registros, temporales, restos de Flatpak y Snap y kernels antiguos, y te explica qué es cada cosa antes de borrar.',
+      ['Cachés y logs', 'Kernels antiguos', 'Tú decides'], '#ffa21f', '#ff4a14'],
+    ['system-service', 'System Service', 'Sistema', 'Servicios systemd, <b>sin línea de comandos</b>.',
+      'Inicia, detiene y habilita servicios y temporizadores, lee los registros, descubre qué ralentiza el arranque. Cada cambio se puede deshacer.',
+      ['Servicios y timers', 'Registros', 'Deshacer cambios'], '#ffc21f', '#ff6a12'],
+    ['theme-manager', 'Theme Manager', 'Escritorio · Tyron', 'Temas completos <b>para Tyron</b>.',
+      'El gestor de temas de Xfce: aplica, crea, exporta e importa temas de escritorio, explora fondos de pantalla y configura el panel.',
+      ['Galería de temas', 'Fondos', 'Panel'], '#ffb52e', '#ff5a14'],
+    ['webapp-manager', 'WebApp Manager', 'Escritorio', 'Cualquier web, <b>como aplicación</b>.',
+      'Convierte un sitio en su propia app: ventana propia, icono propio en la barra y perfil de navegador aislado.',
+      ['Ventana propia', 'Perfil aislado', 'Tu navegador'], '#ffc21f', '#ff6a12'],
+    ['welcome', 'Welcome', 'Bienvenida', 'Tu equipo, <b>puesto a punto</b>.',
+      'Un único lugar para actualizar el sistema, instalar controladores y kernels, reforzar la seguridad y optimizar para juegos.',
+      ['Actualizar', 'Controladores', 'Seguridad', 'Gaming'], '#ffd23f', '#ff7a12'],
+    ['welcome-live', 'Welcome Live', 'ISO Live', 'Bienvenida y <b>rescate del sistema</b>.',
+      'La puerta de entrada del entorno Live: instala Soplos y reúne herramientas de recuperación con soporte completo de BTRFS.',
+      ['Instalar', 'Recuperación', 'BTRFS'], '#ffb52e', '#ff4a14'],
+    ['sli', 'SLI', 'Instalación', 'El instalador <b>de Soplos Linux</b>.',
+      'Soplos Linux Installer: un asistente propio, paso a paso, que sustituirá a Calamares.',
+      ['Asistente paso a paso', 'Sustituye a Calamares', 'Hecho para Soplos'], '#ffc21f', '#ff5a14', 'Próximamente'],
+    ['gaming-panel', 'Gaming Panel', 'Gaming', 'Rendimiento, <b>al instante</b>.',
+      'Un panel superpuesto que se abre con Ctrl+Shift+G y controla GameMode en vivo mientras juegas.',
+      ['Ctrl+Shift+G', 'GameMode en vivo', 'Boro · Tyson · Tyron'], '#ffd23f', '#ff4a14'],
+    ['look-manager', 'Look Manager', 'Escritorio · Tyson', 'El aspecto de Plasma, <b>a tu manera</b>.',
+      'Temas y disposición del escritorio para Tyson: lo que Theme Manager y Layout Switcher hacen en Xfce y GNOME, ahora en Plasma.',
+      ['Temas', 'Disposición', 'Plasma'], '#ffb52e', '#ff6a12', 'Próximamente'],
+  ];
+  const N = APPS.length + 2;          // portada + apps + cierre
+  const DUR = 7000;                   // ms por escena
+  const stage = document.getElementById('stage');
+  const pad = n => String(n).padStart(2, '0');
+
+  const words = (txt) => txt.split(' ').map((w, wi, arr) => {
+    let off = arr.slice(0, wi).join(' ').length + (wi ? 1 : 0);
+    return '<span class="w">' + [...w].map((c, ci) => `<span class="l" style="--i:${off + ci}">${c}</span>`).join('') + '</span>';
+  }).join(' ');
+
+  const scenes = [];
+  // portada
+  const intro = document.createElement('section');
+  intro.className = 'scene intro';
+  intro.style.setProperty('--a1', '#ffc21f'); intro.style.setProperty('--a2', '#ff6a12');
+  const row = APPS.map(a => `<img src="imagenes/${a[0]}.png" alt="">`).join('');
+  intro.innerHTML = `<div class="bg"></div>
+    <div class="marq m1">${row}${row}</div><div class="marq m2">${row}${row}</div>
+    <div class="copy">
+      <div class="kicker"><span class="dot"></span>Presentación<span class="bar"></span></div>
+      <h1 class="title">${words('SOPLOS')}<br>${words('APPS 3.0')}</h1>
+      <p class="tag">Dieciséis herramientas, <b>una sola familia</b>.</p>
+      <button class="start" id="go">Comenzar</button>
+    </div>`;
+  scenes.push(intro);
+
+  APPS.forEach((a, i) => {
+    const [slug, name, cat, tag, desc, chips, a1, a2, badge] = a;
+    const s = document.createElement('section');
+    s.className = 'scene';
+    s.style.setProperty('--a1', a1); s.style.setProperty('--a2', a2);
+    s.innerHTML = `<div class="bg"></div>
+      <div class="ghost">${pad(i + 1)}</div>
+      <div class="copy">
+        <div class="kicker"><span class="dot"></span>${cat}<span class="bar"></span></div>
+        <h1 class="title">${words(name)}${badge ? `<span class="badge">${badge}</span>` : ''}</h1>
+        <p class="tag">${tag}</p>
+        <p class="desc">${desc}</p>
+        <ul class="chips">${chips.map((c, k) => `<li style="--i:${k}">${c}</li>`).join('')}</ul>
+      </div>
+      <div class="art">
+        <div class="halo"></div>
+        <div class="ring r3"></div><div class="ring r2"></div><div class="ring r1"></div>
+        <div class="orbit o2"><i></i></div><div class="orbit o1"><i></i></div>
+        <img class="icon" src="imagenes/${slug}.png" alt="${name}">
+      </div>`;
+    scenes.push(s);
+  });
+
+  // cierre
+  const outro = document.createElement('section');
+  outro.className = 'scene outro';
+  outro.style.setProperty('--a1', '#ffc21f'); outro.style.setProperty('--a2', '#ff5a14');
+  outro.innerHTML = `<div class="bg"></div>
+    <div class="kicker"><span class="dot"></span>Soplos Linux<span class="bar"></span></div>
+    <h1 class="title">${words('Una familia.')}</h1>
+    <div class="wall">${APPS.map((a, i) => `<img src="imagenes/${a[0]}.png" alt="${a[1]}" data-go="${i + 1}" style="--i:${i}">`).join('')}</div>
+    <button class="again" id="again">Volver a empezar</button>`;
+  scenes.push(outro);
+
+  scenes.forEach(s => stage.appendChild(s));
+
+  // HUD
+  const segs = document.getElementById('segs');
+  const segEls = scenes.map((_, i) => { const d = document.createElement('div'); d.className = 'seg'; d.onclick = () => go(i); segs.appendChild(d); return d; });
+  const count = document.getElementById('count');
+  document.getElementById('cards').innerHTML = APPS.map((a, i) => `<button class="card" data-go="${i + 1}"><img src="imagenes/${a[0]}.png" alt=""><span>${a[1]}</span></button>`).join('');
+
+  const wipe = document.getElementById('wipe');
+  let cur = -1, elapsed = 0, playing = true, busy = false;
+
+  function show(i) {
+    scenes.forEach((s, k) => s.classList.toggle('on', k === i));
+    cur = i; elapsed = 0;
+    count.innerHTML = `${pad(i)} <em>/ ${pad(N - 1)}</em>`;
+    segEls.forEach((e, k) => e.style.setProperty('--p', k < i ? 1 : 0));
+  }
+  function go(i, instant) {
+    i = (i + N) % N;
+    if (i === cur || busy) return;
+    if (instant || cur < 0) { show(i); return; }
+    busy = true;
+    wipe.classList.remove('go'); void wipe.offsetWidth; wipe.classList.add('go');
+    setTimeout(() => show(i), 420);
+    setTimeout(() => { wipe.classList.remove('go'); busy = false; }, 1200);
+  }
+  const next = () => go(cur + 1), prev = () => go(cur - 1);
+
+  // temporizador
+  let last = performance.now();
+  function tick(t) {
+    const dt = t - last; last = t;
+    if (playing && !busy && cur >= 0 && cur < N - 1 && !document.hidden) {
+      elapsed += dt;
+      segEls[cur].style.setProperty('--p', Math.min(elapsed / DUR, 1));
+      if (elapsed >= DUR) next();
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) playing = false;
+  const setPlay = (v) => {
+    playing = v;
+    document.getElementById('icoPause').innerHTML = v ? '<path d="M9 5v14M15 5v14"/>' : '<path d="M7 4l12 8-12 8z"/>';
+  };
+  setPlay(playing);
+
+  // controles
+  document.getElementById('bNext').onclick = next;
+  document.getElementById('bPrev').onclick = prev;
+  document.getElementById('bPlay').onclick = () => setPlay(!playing);
+  const ov = document.getElementById('overview');
+  const toggleOv = (v) => { ov.classList.toggle('on', v); };
+  document.getElementById('bGrid').onclick = () => toggleOv(!ov.classList.contains('on'));
+  ov.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) { toggleOv(false); go(+b.dataset.go); } else if (e.target === ov) toggleOv(false); });
+  document.getElementById('go').onclick = next;
+  document.getElementById('again').onclick = () => go(0);
+  outro.addEventListener('click', e => { const b = e.target.closest('img[data-go]'); if (b) go(+b.dataset.go); });
+  const fs = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.();
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') next();
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') prev();
+    else if (e.key === ' ') { e.preventDefault(); setPlay(!playing); }
+    else if (e.key === 'Home') go(0);
+    else if (e.key === 'End') go(N - 1);
+    else if (e.key === 'g' || e.key === 'G') toggleOv(!ov.classList.contains('on'));
+    else if (e.key === 'f' || e.key === 'F') fs();
+    else if (e.key === 'Escape') toggleOv(false);
+  });
+  addEventListener('mousemove', e => {
+    document.body.style.setProperty('--mx', (e.clientX / innerWidth - .5).toFixed(3));
+    document.body.style.setProperty('--my', (e.clientY / innerHeight - .5).toFixed(3));
+  });
+  let tx = null;
+  addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  addEventListener('touchend', e => { if (tx === null) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) (d < 0 ? next : prev)(); tx = null; });
+
+  // hash para saltar: #3
+  const h = parseInt(location.hash.slice(1), 10);
+  go(Number.isFinite(h) ? Math.max(0, Math.min(N - 1, h)) : 0, true);
+
+  // brasas
+  const cv = document.getElementById('fx'), cx = cv.getContext('2d');
+  let W, H, P = [];
+  const size = () => { const r = devicePixelRatio || 1; W = cv.width = innerWidth * r; H = cv.height = innerHeight * r; };
+  addEventListener('resize', size); size();
+  const mk = (init) => ({ x: Math.random() * W, y: init ? Math.random() * H : H + 20, r: (Math.random() * 2.2 + .6) * (devicePixelRatio || 1),
+    v: Math.random() * .5 + .15, a: Math.random() * .6 + .2, w: Math.random() * Math.PI * 2, s: Math.random() * .01 + .004 });
+  for (let i = 0; i < 110; i++) P.push(mk(true));
+  if (!reduce) (function draw() {
+    cx.clearRect(0, 0, W, H); cx.globalCompositeOperation = 'lighter';
+    for (const p of P) {
+      p.y -= p.v * (devicePixelRatio || 1); p.w += p.s; p.x += Math.sin(p.w) * .4;
+      if (p.y < -20) Object.assign(p, mk(false));
+      const g = cx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 5);
+      g.addColorStop(0, `rgba(255,190,60,${p.a})`); g.addColorStop(.4, `rgba(255,110,20,${p.a * .35})`); g.addColorStop(1, 'rgba(255,80,10,0)');
+      cx.fillStyle = g; cx.beginPath(); cx.arc(p.x, p.y, p.r * 5, 0, 7); cx.fill();
+    }
+    requestAnimationFrame(draw);
+  })();
+})();
+</script>
+</body>
+</html>

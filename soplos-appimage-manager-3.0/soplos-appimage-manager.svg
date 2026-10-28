@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1254" height="1254" viewBox="0 0 1254 1254">
+  <defs>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="27.26" y="957.06" width="1079.8" height="273.4" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceGraphic" stdDeviation="22.5"/></filter>
+    <filter id="filter-2" filterUnits="userSpaceOnUse" x="86.16" y="243.16" width="390.8" height="312.4" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.4"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-1" x1="281.56" y1="276.16" x2="281.56" y2="522.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc21f"/>
+      <stop offset="1" stop-color="#ff8a14"/>
+    </linearGradient>
+    <filter id="filter-3" filterUnits="userSpaceOnUse" x="679.76" y="248.76" width="390.8" height="306.8" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dx="0" dy="10" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.4"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-2" x1="875.16" y1="281.76" x2="875.16" y2="522.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc21f"/>
+      <stop offset="1" stop-color="#ff8a14"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="552.107" y1="131.37" x2="515.013" y2="555.35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4a4a51"/>
+      <stop offset="1" stop-color="#26262b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="619.516" y1="215.078" x2="649.204" y2="639.642" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#505057"/>
+      <stop offset="1" stop-color="#2a2a2f"/>
+    </linearGradient>
+    <filter id="filter-4" filterUnits="userSpaceOnUse" x="168.56" y="454.36" width="814" height="662.8" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="13"/><feOffset dx="0" dy="16" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.5"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-5" x1="575.56" y1="511.36" x2="575.56" y2="1060.16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb52e"/>
+      <stop offset="1" stop-color="#ff6a12"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="575.56" y1="511.36" x2="575.56" y2="589.76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="1" stop-color="#ffa21f"/>
+    </linearGradient>
+    <filter id="filter-5" filterUnits="userSpaceOnUse" x="456.26" y="322.06" width="574.6" height="765" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="13"/><feOffset dx="0" dy="16" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.55"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-7" x1="743.56" y1="382.56" x2="743.56" y2="1026.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4c4c53"/>
+      <stop offset="1" stop-color="#222226"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="743.56" y1="379.06" x2="743.56" y2="1030.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc21f"/>
+      <stop offset="1" stop-color="#ff6a12"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-9" x1="919.96" y1="382.56" x2="919.96" y2="483.36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff6e2"/>
+      <stop offset="1" stop-color="#ffd8a4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="724.8" y1="639.88" x2="724.8" y2="802.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc21f"/>
+      <stop offset="1" stop-color="#ff8a14"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="822.24" y1="696.72" x2="822.24" y2="802.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9a1f"/>
+      <stop offset="1" stop-color="#f2491a"/>
+    </linearGradient>
+    <filter id="filter-6" filterUnits="userSpaceOnUse" x="827.9" y="788.9" width="340.92" height="340.92" data-vc-blend="multiply" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="11"/><feOffset dx="0" dy="12" result="shadow"/><feFlood flood-color="#000000" flood-opacity="0.55"/><feComposite in2="shadow" operator="in" result="paint"/><feMerge><feMergeNode in="paint"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="linear-gradient-12" x1="998.36" y1="838.4" x2="998.36" y2="1080.32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#ff6a12"/>
+    </linearGradient>
+  </defs>
+  <title>soplos-appimage-manager</title>
+  <g id="Layer_1" data-name="Layer 1">
+  </g>
+  <g id="Resplandor">
+    <g filter="url(#filter-1)">
+      <path d="M96.76 1093.76 C96.76 1056.646 307.365 1026.56 567.16 1026.56 C826.955 1026.56 1037.56 1056.646 1037.56 1093.76 C1037.56 1130.874 826.955 1160.96 567.16 1160.96 C307.365 1160.96 96.76 1130.874 96.76 1093.76 Z" fill="#ff7a00" opacity="0.55"/>
+    </g>
+  </g>
+  <g id="Solapas_traseras" data-name="Solapas traseras">
+    <g filter="url(#filter-2)">
+      <path d="M236.76 522.56 L119.16 348.96 L371.16 276.16 L443.96 522.56 Z" fill="url(#linear-gradient-1)"/>
+    </g>
+    <g filter="url(#filter-3)">
+      <path d="M914.36 522.56 L1037.56 360.16 L796.76 281.76 L712.76 522.56 Z" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+  <g id="Tarjetas_traseras" data-name="Tarjetas traseras">
+    <path d="M418.617 119.691 L685.597 143.049 C704.303 144.685 718.141 161.176 716.504 179.883 L685.337 536.122 C683.701 554.828 667.21 568.666 648.503 567.029 L381.523 543.671 C362.817 542.035 348.979 525.544 350.616 506.837 L381.783 150.598 C383.419 131.892 399.91 118.054 418.617 119.691 Z" fill="url(#linear-gradient-3)" stroke="#7a7a82" stroke-width="3" stroke-miterlimit="10"/>
+    <path d="M428.858 165.558 L600.602 180.584 C605.554 181.017 609.217 185.382 608.783 190.334 L608.595 192.486 C608.162 197.437 603.797 201.1 598.845 200.667 L427.101 185.641 C422.149 185.208 418.486 180.843 418.92 175.891 L419.108 173.739 C419.541 168.788 423.906 165.125 428.858 165.558 Z" fill="#8a8a92" opacity="0.7"/>
+    <path d="M424.953 210.188 L529.753 219.356 C534.705 219.79 538.368 224.155 537.934 229.106 L537.746 231.258 C537.313 236.21 532.948 239.873 527.996 239.44 L423.196 230.271 C418.245 229.838 414.582 225.472 415.015 220.521 L415.203 218.369 C415.637 213.417 420.002 209.754 424.953 210.188 Z" fill="#8a8a92" opacity="0.4"/>
+    <path d="M485.842 224.426 L753.189 205.731 C771.921 204.421 788.168 218.545 789.478 237.276 L814.423 594.005 C815.733 612.737 801.61 628.984 782.878 630.294 L515.531 648.989 C496.799 650.299 480.552 636.175 479.242 617.444 L454.297 260.715 C452.987 241.983 467.11 225.736 485.842 224.426 Z" fill="url(#linear-gradient-4)" stroke="#85858d" stroke-width="3" stroke-miterlimit="10"/>
+    <path d="M503.523 273.712 L675.503 261.686 C680.462 261.34 684.763 265.078 685.109 270.037 L685.26 272.191 C685.607 277.15 681.868 281.451 676.91 281.797 L504.93 293.823 C499.971 294.17 495.671 290.432 495.324 285.473 L495.173 283.318 C494.826 278.36 498.565 274.059 503.523 273.712 Z" fill="#92929a" opacity="0.7"/>
+    <path d="M506.648 318.403 L611.592 311.065 C616.551 310.718 620.851 314.457 621.198 319.415 L621.349 321.57 C621.695 326.528 617.957 330.829 612.998 331.176 L508.055 338.514 C503.096 338.861 498.796 335.122 498.449 330.164 L498.298 328.009 C497.951 323.051 501.69 318.75 506.648 318.403 Z" fill="#92929a" opacity="0.4"/>
+  </g>
+  <g id="Caja">
+    <g filter="url(#filter-4)">
+      <path d="M255.56 511.36 L895.56 511.36 C912.129 511.36 925.56 524.791 925.56 541.36 L925.56 1030.16 C925.56 1046.729 912.129 1060.16 895.56 1060.16 L255.56 1060.16 C238.991 1060.16 225.56 1046.729 225.56 1030.16 L225.56 541.36 C225.56 524.791 238.991 511.36 255.56 511.36 Z" fill="url(#linear-gradient-5)"/>
+    </g>
+    <path d="M255.56 511.36 L895.56 511.36 C912.129 511.36 925.56 524.791 925.56 541.36 L925.56 559.76 C925.56 576.329 912.129 589.76 895.56 589.76 L255.56 589.76 C238.991 589.76 225.56 576.329 225.56 559.76 L225.56 541.36 C225.56 524.791 238.991 511.36 255.56 511.36 Z" fill="url(#linear-gradient-6)"/>
+    <path d="M303.96 696.16 L371.16 696.16 L371.16 796.96 L415.96 796.96 L337.56 875.36 L259.16 796.96 L303.96 796.96 Z" fill="#c8480d" opacity="0.8"/>
+    <path d="M274.76 903.36 L400.36 903.36 C405.883 903.36 410.36 907.837 410.36 913.36 L410.36 918 C410.36 923.523 405.883 928 400.36 928 L274.76 928 C269.237 928 264.76 923.523 264.76 918 L264.76 913.36 C264.76 907.837 269.237 903.36 274.76 903.36 Z" fill="#c8480d" opacity="0.8"/>
+  </g>
+  <g id="Tarjeta_AppImage" data-name="Tarjeta AppImage">
+    <g filter="url(#filter-5)">
+      <path d="M550.36 382.56 L869.56 382.56 L970.36 483.36 L970.36 992.96 C970.36 1015.36 959.16 1026.56 936.76 1026.56 L550.36 1026.56 C527.96 1026.56 516.76 1015.36 516.76 992.96 L516.76 416.16 C516.76 393.76 527.96 382.56 550.36 382.56 Z" fill="url(#linear-gradient-7)" stroke="url(#linear-gradient-8)" stroke-width="7" stroke-miterlimit="10"/>
+    </g>
+    <path d="M869.56 382.56 L970.36 483.36 L897.56 483.36 C878.893 483.36 869.56 474.027 869.56 455.36 Z" fill="url(#linear-gradient-9)"/>
+    <path d="M619.24 802.28 L724.8 639.88 L830.36 802.28 Z" fill="url(#linear-gradient-10)"/>
+    <path d="M741.04 802.28 L822.24 696.72 L903.44 802.28 Z" fill="url(#linear-gradient-11)"/>
+    <path d="M797.88 635.008 C797.88 617.07 812.422 602.528 830.36 602.528 C848.298 602.528 862.84 617.07 862.84 635.008 C862.84 652.946 848.298 667.488 830.36 667.488 C812.422 667.488 797.88 652.946 797.88 635.008 Z" fill="#fff3dc"/>
+    <path d="M600.56 864.16 L841.76 864.16 C847.835 864.16 852.76 869.085 852.76 875.16 L852.76 877.8 C852.76 883.875 847.835 888.8 841.76 888.8 L600.56 888.8 C594.485 888.8 589.56 883.875 589.56 877.8 L589.56 875.16 C589.56 869.085 594.485 864.16 600.56 864.16 Z" fill="#fff3dc" opacity="0.85"/>
+    <path d="M600.56 911.2 L746.56 911.2 C752.635 911.2 757.56 916.125 757.56 922.2 L757.56 924.84 C757.56 930.915 752.635 935.84 746.56 935.84 L600.56 935.84 C594.485 935.84 589.56 930.915 589.56 924.84 L589.56 922.2 C589.56 916.125 594.485 911.2 600.56 911.2 Z" fill="#fff3dc" opacity="0.45"/>
+  </g>
+  <g id="Engranaje">
+    <g filter="url(#filter-6)">
+      <path d="M877.4 959.36 C877.4 892.556 931.556 838.4 998.36 838.4 C1065.164 838.4 1119.32 892.556 1119.32 959.36 C1119.32 1026.164 1065.164 1080.32 998.36 1080.32 C931.556 1080.32 877.4 1026.164 877.4 959.36 Z" fill="url(#linear-gradient-12)" stroke="#ffe9b0" stroke-width="5" stroke-miterlimit="10"/>
+    </g>
+    <path d="M1045.176 948.16 L1060.52 950.96 L1060.52 967.76 L1045.176 970.56 L1039.464 984.56 L1048.2 997.44 L1036.44 1009.2 L1023.56 1000.464 L1009.56 1006.176 L1006.76 1021.52 L989.96 1021.52 L987.16 1006.176 L973.16 1000.464 L960.28 1009.2 L948.52 997.44 L957.256 984.56 L951.544 970.56 L936.2 967.76 L936.2 950.96 L951.544 948.16 L957.256 934.16 L948.52 921.28 L960.28 909.52 L973.16 918.256 L987.16 912.544 L989.96 897.2 L1006.76 897.2 L1009.56 912.544 L1023.56 918.256 L1036.44 909.52 L1048.2 921.28 L1039.464 934.16 Z M1019.64 959.36 C1019.64 947.607 1010.113 938.08 998.36 938.08 C986.607 938.08 977.08 947.607 977.08 959.36 C977.08 971.113 986.607 980.64 998.36 980.64 C1010.113 980.64 1019.64 971.113 1019.64 959.36 Z" fill="#fff3dc" stroke="#fff3dc" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+</svg>
