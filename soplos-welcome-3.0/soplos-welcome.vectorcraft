@@ -1,11 +1,11 @@
 {
   "format": "vectorcraft",
   "version": 4,
-  "generator": "VectorCraft 0.17.0",
+  "generator": "VectorCraft 0.18.0",
   "document": {
     "version": 1,
-    "title": "soplos-welcome",
-    "units": "Pixels",
+    "title": "Untitled-1",
+    "units": "Points",
     "rulers": "artboard",
     "color_mode": "Rgb",
     "artboards": [
@@ -33,23 +33,11 @@
           },
           "template": false,
           "printable": true,
-          "children": []
-        }
-      },
-      {
-        "id": 2,
-        "name": "Resplandor",
-        "kind": {
-          "type": "layer",
-          "color": {
-            "Preset": 1
-          },
-          "template": false,
-          "printable": true,
           "children": [
             {
-              "id": 3,
-              "opacity": 0.4,
+              "id": 210,
+              "name": "wc-ground",
+              "opacity": 0.42,
               "appearance": {
                 "items": [
                   {
@@ -59,8 +47,8 @@
                       "color": {
                         "model": "rgb",
                         "r": 1.0,
-                        "g": 0.47843137,
-                        "b": 0.0
+                        "g": 0.5411765,
+                        "b": 0.078431375
                       }
                     }
                   },
@@ -69,14 +57,14 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0
+                    "width": 0.0
                   }
                 ],
                 "effects": [
                   {
                     "id": "blur.gaussian",
                     "params": {
-                      "radius": 40
+                      "radius": 31.9
                     },
                     "visible": true
                   }
@@ -90,61 +78,61 @@
                       "anchors": [
                         {
                           "p": [
-                            289.0,
-                            1150.0
+                            126.75,
+                            1157.9
                           ],
                           "in": [
-                            289.0,
-                            1169.8822509939087
+                            126.75,
+                            1191.5341412646953
                           ],
                           "out": [
-                            289.0,
-                            1130.1177490060913
+                            126.75,
+                            1124.2658587353046
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            619.0,
-                            1114.0
+                            627.0,
+                            1097.0
                           ],
                           "in": [
-                            436.74603255583816,
-                            1114.0
+                            350.71955389714554,
+                            1097.0
                           ],
                           "out": [
-                            801.2539674441618,
-                            1114.0
+                            903.2804461028545,
+                            1097.0
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            949.0,
-                            1150.0
+                            1127.25,
+                            1157.9
                           ],
                           "in": [
-                            949.0,
-                            1130.1177490060913
+                            1127.25,
+                            1124.2658587353046
                           ],
                           "out": [
-                            949.0,
-                            1169.8822509939087
+                            1127.25,
+                            1191.5341412646953
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            619.0,
-                            1186.0
+                            627.0,
+                            1218.8
                           ],
                           "in": [
-                            801.2539674441618,
-                            1186.0
+                            903.2804461028545,
+                            1218.8
                           ],
                           "out": [
-                            436.74603255583816,
-                            1186.0
+                            350.71955389714554,
+                            1218.8
                           ],
                           "kind": "Smooth"
                         }
@@ -155,8 +143,8 @@
                 },
                 "live": {
                   "shape": "ellipse",
-                  "w": 660.0,
-                  "h": 72.0,
+                  "w": 1000.5,
+                  "h": 121.79999999999995,
                   "pie": [
                     0.0,
                     360.0
@@ -166,28 +154,15 @@
                     0.0,
                     0.0,
                     1.0,
-                    289.0,
-                    1114.0
+                    126.75,
+                    1097.0
                   ]
                 }
               }
-            }
-          ]
-        }
-      },
-      {
-        "id": 4,
-        "name": "Hueco",
-        "kind": {
-          "type": "layer",
-          "color": {
-            "Preset": 2
-          },
-          "template": false,
-          "printable": true,
-          "children": [
+            },
             {
-              "id": 5,
+              "id": 211,
+              "name": "wc-lid",
               "appearance": {
                 "items": [
                   {
@@ -201,9 +176,2974 @@
                             "offset": 0.0,
                             "color": {
                               "model": "rgb",
-                              "r": 0.20392157,
-                              "g": 0.20392157,
-                              "b": 0.22745098
+                              "r": 0.8980392,
+                              "g": 0.3764706,
+                              "b": 0.05882353
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.56078434,
+                              "g": 0.19607843,
+                              "b": 0.02745098
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.8980392,
+                              "g": 0.3764706,
+                              "b": 0.05882353
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.56078434,
+                              "g": 0.19607843,
+                              "b": 0.02745098
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 31.9,
+                    "join": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            219.55,
+                            589.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            289.15,
+                            308.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            964.85,
+                            308.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            1034.45,
+                            589.5
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 212,
+              "name": "wc-lid-ribbon",
+              "opacity": 0.88,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.95686275,
+                              "b": 0.87058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.78431374,
+                              "b": 0.56078434
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            558.85,
+                            589.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            574.8,
+                            308.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            679.2,
+                            308.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            695.15,
+                            589.5
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 213,
+              "name": "wc-lid-edge",
+              "opacity": 0.8,
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.7607843,
+                        "b": 0.12156863
+                      }
+                    },
+                    "width": 10.15,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            297.85,
+                            316.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            956.15,
+                            316.9
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 214,
+              "name": "wc-inside",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Radial",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9647059,
+                              "b": 0.8156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.4,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.8,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.70980394,
+                              "g": 0.22745098,
+                              "b": 0.03137255
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            207.95,
+                            589.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            1046.05,
+                            589.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            1069.25,
+                            682.3
+                          ]
+                        },
+                        {
+                          "p": [
+                            184.75,
+                            682.3
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 215,
+              "name": "wc-glow",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Radial",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.9529412,
+                              "b": 0.76862746
+                            },
+                            "opacity": 0.9,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 0.3,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            134.0,
+                            589.5
+                          ],
+                          "in": [
+                            134.0,
+                            773.6869640685696
+                          ],
+                          "out": [
+                            134.0,
+                            405.31303593143036
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            256.0
+                          ],
+                          "in": [
+                            354.72361833341876,
+                            256.0
+                          ],
+                          "out": [
+                            899.2763816665813,
+                            256.0
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            1120.0,
+                            589.5
+                          ],
+                          "in": [
+                            1120.0,
+                            405.31303593143036
+                          ],
+                          "out": [
+                            1120.0,
+                            773.6869640685696
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            923.0
+                          ],
+                          "in": [
+                            899.2763816665813,
+                            923.0
+                          ],
+                          "out": [
+                            354.72361833341876,
+                            923.0
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "ellipse",
+                  "w": 986.0,
+                  "h": 667.0,
+                  "pie": [
+                    0.0,
+                    360.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    134.0,
+                    256.0
+                  ]
+                }
+              }
+            },
+            {
+              "id": 216,
+              "name": "wc-shield-tile",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.2901961,
+                              "g": 0.2901961,
+                              "b": 0.31764707
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.20784314,
+                              "g": 0.20784314,
+                              "b": 0.23137255
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.078431375,
+                              "g": 0.078431375,
+                              "b": 0.09019608
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 8.7,
+                    "join": "Round"
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 18,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 50,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 14
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            250.3,
+                            363.84
+                          ],
+                          "in": [
+                            224.5540099963814,
+                            369.78472210568395
+                          ]
+                        },
+                        {
+                          "p": [
+                            368.98,
+                            336.44
+                          ],
+                          "out": [
+                            394.72708134575254,
+                            330.5000063673907
+                          ]
+                        },
+                        {
+                          "p": [
+                            426.36,
+                            372.3
+                          ],
+                          "in": [
+                            420.415277894316,
+                            346.5540099963814
+                          ]
+                        },
+                        {
+                          "p": [
+                            453.76,
+                            490.98
+                          ],
+                          "out": [
+                            459.6999936326093,
+                            516.7270813457526
+                          ]
+                        },
+                        {
+                          "p": [
+                            417.9,
+                            548.36
+                          ],
+                          "in": [
+                            443.6459900036186,
+                            542.4152778943161
+                          ]
+                        },
+                        {
+                          "p": [
+                            299.22,
+                            575.76
+                          ],
+                          "out": [
+                            273.47291865424745,
+                            581.6999936326092
+                          ]
+                        },
+                        {
+                          "p": [
+                            241.84,
+                            539.9
+                          ],
+                          "in": [
+                            247.784722105684,
+                            565.6459900036186
+                          ]
+                        },
+                        {
+                          "p": [
+                            214.44,
+                            421.22
+                          ],
+                          "out": [
+                            208.50000636739068,
+                            395.47291865424745
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 217,
+              "name": "wc-shield-shield",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.55,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0,
+                    "join": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            319.1,
+                            391.11
+                          ]
+                        },
+                        {
+                          "p": [
+                            374.52,
+                            399.15
+                          ]
+                        },
+                        {
+                          "p": [
+                            386.27,
+                            450.01
+                          ],
+                          "out": [
+                            394.1,
+                            483.92
+                          ]
+                        },
+                        {
+                          "p": [
+                            351.71,
+                            532.39
+                          ],
+                          "in": [
+                            374.97,
+                            510.65
+                          ],
+                          "out": [
+                            321.28,
+                            523.05
+                          ]
+                        },
+                        {
+                          "p": [
+                            284.54,
+                            473.49
+                          ],
+                          "in": [
+                            292.37,
+                            507.4
+                          ]
+                        },
+                        {
+                          "p": [
+                            272.8,
+                            422.63
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 218,
+              "name": "wc-shield-check",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.078431375,
+                        "g": 0.078431375,
+                        "b": 0.09019608
+                      }
+                    },
+                    "width": 13.05,
+                    "cap": "Round",
+                    "join": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            313.89,
+                            465.23
+                          ]
+                        },
+                        {
+                          "p": [
+                            333.67,
+                            480.01
+                          ]
+                        },
+                        {
+                          "p": [
+                            354.53,
+                            435.01
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 219,
+              "name": "wc-pad-tile",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.2901961,
+                              "g": 0.2901961,
+                              "b": 0.31764707
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.20784314,
+                              "g": 0.20784314,
+                              "b": 0.23137255
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.078431375,
+                              "g": 0.078431375,
+                              "b": 0.09019608
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 8.7,
+                    "join": "Round"
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 18,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 50,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 14
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            885.02,
+                            336.44
+                          ],
+                          "in": [
+                            859.2729186542474,
+                            330.5000063673907
+                          ]
+                        },
+                        {
+                          "p": [
+                            1003.7,
+                            363.84
+                          ],
+                          "out": [
+                            1029.4459900036186,
+                            369.784722105684
+                          ]
+                        },
+                        {
+                          "p": [
+                            1039.56,
+                            421.22
+                          ],
+                          "in": [
+                            1045.4999936326092,
+                            395.4729186542475
+                          ]
+                        },
+                        {
+                          "p": [
+                            1012.16,
+                            539.9
+                          ],
+                          "out": [
+                            1006.215277894316,
+                            565.6459900036185
+                          ]
+                        },
+                        {
+                          "p": [
+                            954.78,
+                            575.76
+                          ],
+                          "in": [
+                            980.5270813457525,
+                            581.6999936326092
+                          ]
+                        },
+                        {
+                          "p": [
+                            836.1,
+                            548.36
+                          ],
+                          "out": [
+                            810.3540099963815,
+                            542.4152778943161
+                          ]
+                        },
+                        {
+                          "p": [
+                            800.24,
+                            490.9800000000001
+                          ],
+                          "in": [
+                            794.3000063673908,
+                            516.7270813457526
+                          ]
+                        },
+                        {
+                          "p": [
+                            827.64,
+                            372.3
+                          ],
+                          "out": [
+                            833.5847221056839,
+                            346.5540099963814
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 220,
+              "name": "wc-pad-pad",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.55,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0,
+                    "join": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            860.13,
+                            418.49
+                          ],
+                          "out": [
+                            866.0,
+                            393.06
+                          ]
+                        },
+                        {
+                          "p": [
+                            909.69,
+                            397.19
+                          ],
+                          "in": [
+                            887.08,
+                            391.97
+                          ]
+                        },
+                        {
+                          "p": [
+                            954.9,
+                            407.63
+                          ],
+                          "out": [
+                            977.51,
+                            412.85
+                          ]
+                        },
+                        {
+                          "p": [
+                            990.11,
+                            448.5
+                          ],
+                          "in": [
+                            995.98,
+                            423.07
+                          ]
+                        },
+                        {
+                          "p": [
+                            987.71,
+                            510.45
+                          ],
+                          "out": [
+                            986.08,
+                            536.86
+                          ]
+                        },
+                        {
+                          "p": [
+                            950.98,
+                            521.31
+                          ],
+                          "in": [
+                            961.52,
+                            540.12
+                          ]
+                        },
+                        {
+                          "p": [
+                            933.92,
+                            492.08
+                          ]
+                        },
+                        {
+                          "p": [
+                            891.53,
+                            482.29
+                          ]
+                        },
+                        {
+                          "p": [
+                            863.38,
+                            501.09
+                          ],
+                          "out": [
+                            845.66,
+                            513.37
+                          ]
+                        },
+                        {
+                          "p": [
+                            835.13,
+                            475.22
+                          ],
+                          "in": [
+                            825.02,
+                            499.67
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 221,
+              "name": "wc-pad-dpad-v",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.078431375,
+                        "g": 0.078431375,
+                        "b": 0.09019608
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            890.34,
+                            416.54
+                          ]
+                        },
+                        {
+                          "p": [
+                            901.64,
+                            419.15
+                          ]
+                        },
+                        {
+                          "p": [
+                            894.14,
+                            451.64
+                          ]
+                        },
+                        {
+                          "p": [
+                            882.84,
+                            449.03
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 222,
+              "name": "wc-pad-dpad-h",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.078431375,
+                        "g": 0.078431375,
+                        "b": 0.09019608
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            877.52,
+                            426.97
+                          ]
+                        },
+                        {
+                          "p": [
+                            908.6,
+                            434.15
+                          ]
+                        },
+                        {
+                          "p": [
+                            906.97,
+                            441.21
+                          ]
+                        },
+                        {
+                          "p": [
+                            875.89,
+                            434.03
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 223,
+              "name": "wc-pad-btn",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.078431375,
+                        "g": 0.078431375,
+                        "b": 0.09019608
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            944.95,
+                            441.05
+                          ],
+                          "in": [
+                            943.9586488740538,
+                            445.3412525061853
+                          ],
+                          "out": [
+                            945.9413511259463,
+                            436.7587474938148
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            954.515,
+                            435.07500000000005
+                          ],
+                          "in": [
+                            950.2237474938148,
+                            434.0836488740538
+                          ],
+                          "out": [
+                            958.8062525061853,
+                            436.0663511259463
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            960.49,
+                            444.64
+                          ],
+                          "in": [
+                            961.4813511259463,
+                            440.34874749381476
+                          ],
+                          "out": [
+                            959.4986488740537,
+                            448.9312525061853
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            950.9250000000001,
+                            450.615
+                          ],
+                          "in": [
+                            955.2162525061852,
+                            451.6063511259463
+                          ],
+                          "out": [
+                            946.6337474938148,
+                            449.62364887405374
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 224,
+              "name": "wc-pad-btn",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 0.078431375,
+                        "g": 0.078431375,
+                        "b": 0.09019608
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            958.64,
+                            459.09
+                          ],
+                          "in": [
+                            957.6486488740536,
+                            463.38401392993444
+                          ],
+                          "out": [
+                            959.6313511259463,
+                            454.7959860700655
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            968.21,
+                            453.10999999999996
+                          ],
+                          "in": [
+                            963.9159860700655,
+                            452.1186488740537
+                          ],
+                          "out": [
+                            972.5040139299344,
+                            454.1013511259462
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            974.19,
+                            462.68
+                          ],
+                          "in": [
+                            975.1813511259463,
+                            458.38598607006554
+                          ],
+                          "out": [
+                            973.1986488740537,
+                            466.9740139299345
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            964.62,
+                            468.66
+                          ],
+                          "in": [
+                            968.9140139299344,
+                            469.6513511259463
+                          ],
+                          "out": [
+                            960.3259860700655,
+                            467.66864887405376
+                          ],
+                          "kind": "Smooth"
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 225,
+              "name": "wc-chip-tile",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.2901961,
+                              "g": 0.2901961,
+                              "b": 0.31764707
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.20784314,
+                              "g": 0.20784314,
+                              "b": 0.23137255
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.078431375,
+                              "g": 0.078431375,
+                              "b": 0.09019608
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 8.7,
+                    "join": "Round"
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 18,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 50,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 14
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            549.86,
+                            161.75
+                          ],
+                          "in": [
+                            516.3860213127556,
+                            161.75000000000003
+                          ]
+                        },
+                        {
+                          "p": [
+                            704.14,
+                            161.75
+                          ],
+                          "out": [
+                            737.6139786872444,
+                            161.75
+                          ]
+                        },
+                        {
+                          "p": [
+                            764.75,
+                            222.36
+                          ],
+                          "in": [
+                            764.75,
+                            188.88602131275564
+                          ]
+                        },
+                        {
+                          "p": [
+                            764.75,
+                            376.64
+                          ],
+                          "out": [
+                            764.75,
+                            410.11397868724436
+                          ]
+                        },
+                        {
+                          "p": [
+                            704.14,
+                            437.25
+                          ],
+                          "in": [
+                            737.6139786872444,
+                            437.25
+                          ]
+                        },
+                        {
+                          "p": [
+                            549.86,
+                            437.25
+                          ],
+                          "out": [
+                            516.3860213127557,
+                            437.25
+                          ]
+                        },
+                        {
+                          "p": [
+                            489.25,
+                            376.64
+                          ],
+                          "in": [
+                            489.25,
+                            410.11397868724436
+                          ]
+                        },
+                        {
+                          "p": [
+                            489.25,
+                            222.36
+                          ],
+                          "out": [
+                            489.25,
+                            188.88602131275564
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 226,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            583.5,
+                            241.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            583.5,
+                            216.85
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 227,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            583.5,
+                            357.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            583.5,
+                            382.15
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 228,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            569.0,
+                            256.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            544.35,
+                            256.0
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 229,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            685.0,
+                            256.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            709.65,
+                            256.0
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 230,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            605.25,
+                            241.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            605.25,
+                            216.85
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 231,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            605.25,
+                            357.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            605.25,
+                            382.15
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 232,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            569.0,
+                            277.75
+                          ]
+                        },
+                        {
+                          "p": [
+                            544.35,
+                            277.75
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 233,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            685.0,
+                            277.75
+                          ]
+                        },
+                        {
+                          "p": [
+                            709.65,
+                            277.75
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 234,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            627.0,
+                            241.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            216.85
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 235,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            627.0,
+                            357.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            382.15
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 236,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            569.0,
+                            299.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            544.35,
+                            299.5
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 237,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            685.0,
+                            299.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            709.65,
+                            299.5
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 238,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            648.75,
+                            241.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            648.75,
+                            216.85
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 239,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            648.75,
+                            357.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            648.75,
+                            382.15
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 240,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            569.0,
+                            321.25
+                          ]
+                        },
+                        {
+                          "p": [
+                            544.35,
+                            321.25
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 241,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            685.0,
+                            321.25
+                          ]
+                        },
+                        {
+                          "p": [
+                            709.65,
+                            321.25
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 242,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            670.5,
+                            241.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            670.5,
+                            216.85
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 243,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            670.5,
+                            357.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            670.5,
+                            382.15
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 244,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            569.0,
+                            343.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            544.35,
+                            343.0
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 245,
+              "name": "wc-chip-leg",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.5411765,
+                        "b": 0.078431375
+                      }
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            685.0,
+                            343.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            709.65,
+                            343.0
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 246,
+              "name": "wc-chip-chip",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.55,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            586.4,
+                            238.6
+                          ],
+                          "in": [
+                            575.1886195784349,
+                            238.60000000000005
+                          ]
+                        },
+                        {
+                          "p": [
+                            667.6,
+                            238.6
+                          ],
+                          "out": [
+                            678.8113804215651,
+                            238.60000000000005
+                          ]
+                        },
+                        {
+                          "p": [
+                            687.9,
+                            258.90000000000003
+                          ],
+                          "in": [
+                            687.9,
+                            247.68861957843492
+                          ]
+                        },
+                        {
+                          "p": [
+                            687.9,
+                            340.1
+                          ],
+                          "out": [
+                            687.9,
+                            351.3113804215651
+                          ]
+                        },
+                        {
+                          "p": [
+                            667.6,
+                            360.4
+                          ],
+                          "in": [
+                            678.8113804215651,
+                            360.3999999999999
+                          ]
+                        },
+                        {
+                          "p": [
+                            586.4,
+                            360.4
+                          ],
+                          "out": [
+                            575.1886195784349,
+                            360.3999999999999
+                          ]
+                        },
+                        {
+                          "p": [
+                            566.1,
+                            340.1
+                          ],
+                          "in": [
+                            566.1,
+                            351.3113804215651
+                          ]
+                        },
+                        {
+                          "p": [
+                            566.1,
+                            258.9
+                          ],
+                          "out": [
+                            566.1,
+                            247.68861957843492
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 247,
+              "name": "wc-chip-core",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.14901961,
+                              "g": 0.14901961,
+                              "b": 0.16470589
                             },
                             "opacity": 1.0,
                             "midpoint": 0.5
@@ -229,23 +3169,7 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0
-                  }
-                ],
-                "effects": [
-                  {
-                    "id": "stylize.dropShadow",
-                    "params": {
-                      "blur": 12,
-                      "color": "#000000",
-                      "darkness": 100.0,
-                      "mode": "multiply",
-                      "opacity": 40,
-                      "shade": "color",
-                      "x": 0,
-                      "y": 6
-                    },
-                    "visible": true
+                    "width": 0.0
                   }
                 ]
               },
@@ -257,26 +3181,82 @@
                       "anchors": [
                         {
                           "p": [
-                            267.0,
-                            572.0
+                            602.35,
+                            261.8
+                          ],
+                          "in": [
+                            595.1426840147082,
+                            261.8
                           ]
                         },
                         {
                           "p": [
-                            624.0,
-                            400.0
+                            651.65,
+                            261.8
+                          ],
+                          "out": [
+                            658.8573159852918,
+                            261.79999999999995
                           ]
                         },
                         {
                           "p": [
-                            977.0,
-                            618.0
+                            664.6999999999999,
+                            274.85
+                          ],
+                          "in": [
+                            664.6999999999999,
+                            267.64268401470815
                           ]
                         },
                         {
                           "p": [
-                            624.0,
-                            796.0
+                            664.7,
+                            324.15
+                          ],
+                          "out": [
+                            664.6999999999999,
+                            331.35731598529185
+                          ]
+                        },
+                        {
+                          "p": [
+                            651.6499999999999,
+                            337.2
+                          ],
+                          "in": [
+                            658.8573159852918,
+                            337.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            602.35,
+                            337.2
+                          ],
+                          "out": [
+                            595.1426840147082,
+                            337.20000000000005
+                          ]
+                        },
+                        {
+                          "p": [
+                            589.3000000000001,
+                            324.15
+                          ],
+                          "in": [
+                            589.3000000000001,
+                            331.35731598529185
+                          ]
+                        },
+                        {
+                          "p": [
+                            589.3,
+                            274.85
+                          ],
+                          "out": [
+                            589.3000000000001,
+                            267.64268401470815
                           ]
                         }
                       ],
@@ -287,8 +3267,163 @@
               }
             },
             {
-              "id": 6,
-              "opacity": 0.7,
+              "id": 248,
+              "name": "wc-chip-arrow",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 11.6,
+                    "cap": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            627.0,
+                            277.75
+                          ]
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            315.45
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 249,
+              "name": "wc-chip-arrow",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "none"
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 11.6,
+                    "cap": "Round",
+                    "join": "Round"
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            611.05,
+                            300.95
+                          ]
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            318.35
+                          ]
+                        },
+                        {
+                          "p": [
+                            642.95,
+                            300.95
+                          ]
+                        }
+                      ],
+                      "closed": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 250,
+              "name": "wc-sparkle",
               "appearance": {
                 "items": [
                   {
@@ -298,8 +3433,8 @@
                       "color": {
                         "model": "rgb",
                         "r": 1.0,
-                        "g": 0.70980394,
-                        "b": 0.18039216
+                        "g": 0.8235294,
+                        "b": 0.24705882
                       }
                     }
                   },
@@ -308,14 +3443,402 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            1030.1,
+                            145.8
+                          ]
+                        },
+                        {
+                          "p": [
+                            1039.3277434944844,
+                            191.67225650551555
+                          ]
+                        },
+                        {
+                          "p": [
+                            1085.1999999999998,
+                            200.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            1039.3277434944844,
+                            210.12774349448446
+                          ]
+                        },
+                        {
+                          "p": [
+                            1030.1,
+                            256.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1020.8722565055155,
+                            210.12774349448446
+                          ]
+                        },
+                        {
+                          "p": [
+                            974.9999999999999,
+                            200.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            1020.8722565055155,
+                            191.67225650551555
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 251,
+              "name": "wc-sparkle",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.8235294,
+                        "b": 0.24705882
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            228.25,
+                            215.39999999999998
+                          ]
+                        },
+                        {
+                          "p": [
+                            235.42713382904347,
+                            245.92286617095652
+                          ]
+                        },
+                        {
+                          "p": [
+                            265.95,
+                            253.1
+                          ]
+                        },
+                        {
+                          "p": [
+                            235.42713382904347,
+                            260.27713382904346
+                          ]
+                        },
+                        {
+                          "p": [
+                            228.25,
+                            290.8
+                          ]
+                        },
+                        {
+                          "p": [
+                            221.07286617095653,
+                            260.27713382904346
+                          ]
+                        },
+                        {
+                          "p": [
+                            190.55,
+                            253.1
+                          ]
+                        },
+                        {
+                          "p": [
+                            221.07286617095653,
+                            245.92286617095652
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 252,
+              "name": "wc-sparkle",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.8235294,
+                        "b": 0.24705882
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            1106.95,
+                            377.79999999999995
+                          ]
+                        },
+                        {
+                          "p": [
+                            1112.0765241636025,
+                            398.7734758363975
+                          ]
+                        },
+                        {
+                          "p": [
+                            1133.05,
+                            403.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            1112.0765241636025,
+                            409.02652416360246
+                          ]
+                        },
+                        {
+                          "p": [
+                            1106.95,
+                            430.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            1101.8234758363976,
+                            409.02652416360246
+                          ]
+                        },
+                        {
+                          "p": [
+                            1080.8500000000001,
+                            403.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            1101.8234758363976,
+                            398.7734758363975
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 253,
+              "name": "wc-sparkle",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "solid",
+                      "color": {
+                        "model": "rgb",
+                        "r": 1.0,
+                        "g": 0.8235294,
+                        "b": 0.24705882
+                      }
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            174.6,
+                            424.2
+                          ]
+                        },
+                        {
+                          "p": [
+                            178.70121933088197,
+                            440.398780669118
+                          ]
+                        },
+                        {
+                          "p": [
+                            194.9,
+                            444.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            178.70121933088197,
+                            448.601219330882
+                          ]
+                        },
+                        {
+                          "p": [
+                            174.6,
+                            464.8
+                          ]
+                        },
+                        {
+                          "p": [
+                            170.49878066911802,
+                            448.601219330882
+                          ]
+                        },
+                        {
+                          "p": [
+                            154.29999999999998,
+                            444.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            170.49878066911802,
+                            440.398780669118
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 254,
+              "name": "wc-body",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.5411765,
+                              "b": 0.078431375
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
                   }
                 ],
                 "effects": [
                   {
-                    "id": "blur.gaussian",
+                    "id": "stylize.dropShadow",
                     "params": {
-                      "radius": 26
+                      "blur": 30,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 55,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 18
                     },
                     "visible": true
                   }
@@ -329,61 +3852,909 @@
                       "anchors": [
                         {
                           "p": [
-                            522.0,
-                            508.0
+                            263.05,
+                            699.7
                           ],
                           "in": [
-                            522.0,
-                            530.0913899932318
+                            226.21260718628605,
+                            699.7
+                          ]
+                        },
+                        {
+                          "p": [
+                            990.9499999999998,
+                            699.7
                           ],
                           "out": [
-                            522.0,
-                            485.90861000676824
+                            1027.7873928137137,
+                            699.7
+                          ]
+                        },
+                        {
+                          "p": [
+                            1057.6499999999999,
+                            766.4000000000001
+                          ],
+                          "in": [
+                            1057.6499999999999,
+                            729.5626071862861
+                          ]
+                        },
+                        {
+                          "p": [
+                            1057.6499999999999,
+                            1044.8
+                          ],
+                          "out": [
+                            1057.6499999999999,
+                            1081.637392813714
+                          ]
+                        },
+                        {
+                          "p": [
+                            990.9499999999998,
+                            1111.5
+                          ],
+                          "in": [
+                            1027.7873928137137,
+                            1111.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            263.05,
+                            1111.5
+                          ],
+                          "out": [
+                            226.21260718628605,
+                            1111.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            196.35,
+                            1044.8
+                          ],
+                          "in": [
+                            196.35,
+                            1081.637392813714
+                          ]
+                        },
+                        {
+                          "p": [
+                            196.35,
+                            766.4000000000001
+                          ],
+                          "out": [
+                            196.35,
+                            729.5626071862861
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 861.2999999999998,
+                  "h": 411.79999999999995,
+                  "radii": [
+                    66.7,
+                    66.7,
+                    66.7,
+                    66.7
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    196.35,
+                    699.7
+                  ]
+                }
+              }
+            },
+            {
+              "id": 255,
+              "name": "wc-body-shade",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 1.0,
+                              "b": 1.0
+                            },
+                            "opacity": 0.14,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.45,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 1.0,
+                              "b": 1.0
+                            },
+                            "opacity": 0.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.72156864,
+                              "g": 0.18431373,
+                              "b": 0.03137255
+                            },
+                            "opacity": 0.5,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            263.05,
+                            699.7
+                          ],
+                          "in": [
+                            226.21260718628605,
+                            699.7
+                          ]
+                        },
+                        {
+                          "p": [
+                            990.9499999999998,
+                            699.7
+                          ],
+                          "out": [
+                            1027.7873928137137,
+                            699.7
+                          ]
+                        },
+                        {
+                          "p": [
+                            1057.6499999999999,
+                            766.4000000000001
+                          ],
+                          "in": [
+                            1057.6499999999999,
+                            729.5626071862861
+                          ]
+                        },
+                        {
+                          "p": [
+                            1057.6499999999999,
+                            1044.8
+                          ],
+                          "out": [
+                            1057.6499999999999,
+                            1081.637392813714
+                          ]
+                        },
+                        {
+                          "p": [
+                            990.9499999999998,
+                            1111.5
+                          ],
+                          "in": [
+                            1027.7873928137137,
+                            1111.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            263.05,
+                            1111.5
+                          ],
+                          "out": [
+                            226.21260718628605,
+                            1111.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            196.35,
+                            1044.8
+                          ],
+                          "in": [
+                            196.35,
+                            1081.637392813714
+                          ]
+                        },
+                        {
+                          "p": [
+                            196.35,
+                            766.4000000000001
+                          ],
+                          "out": [
+                            196.35,
+                            729.5626071862861
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 861.2999999999998,
+                  "h": 411.79999999999995,
+                  "radii": [
+                    66.7,
+                    66.7,
+                    66.7,
+                    66.7
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    196.35,
+                    699.7
+                  ]
+                }
+              }
+            },
+            {
+              "id": 256,
+              "name": "wc-lip",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8862745,
+                              "b": 0.47843137
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.7607843,
+                              "b": 0.12156863
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 30,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 55,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 18
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            206.5,
+                            676.5
+                          ],
+                          "in": [
+                            186.47967781863372,
+                            676.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            1047.5,
+                            676.5
+                          ],
+                          "out": [
+                            1067.5203221813663,
+                            676.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            1083.75,
+                            712.75
+                          ],
+                          "in": [
+                            1083.75,
+                            692.7296778186337
+                          ]
+                        },
+                        {
+                          "p": [
+                            1083.75,
+                            712.75
+                          ],
+                          "out": [
+                            1083.75,
+                            732.7703221813663
+                          ]
+                        },
+                        {
+                          "p": [
+                            1047.5,
+                            749.0
+                          ],
+                          "in": [
+                            1067.5203221813663,
+                            749.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            206.5,
+                            749.0
+                          ],
+                          "out": [
+                            186.47967781863372,
+                            749.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            170.25,
+                            712.75
+                          ],
+                          "in": [
+                            170.25,
+                            732.7703221813663
+                          ]
+                        },
+                        {
+                          "p": [
+                            170.25,
+                            712.75
+                          ],
+                          "out": [
+                            170.25,
+                            692.7296778186337
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 913.5,
+                  "h": 72.5,
+                  "radii": [
+                    36.25,
+                    36.25,
+                    36.25,
+                    36.25
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    170.25,
+                    676.5
+                  ]
+                }
+              }
+            },
+            {
+              "id": 257,
+              "name": "wc-ribbon",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.78431374,
+                              "b": 0.56078434
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.95686275,
+                              "b": 0.87058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.78431374,
+                              "b": 0.56078434
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            548.7,
+                            749.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            705.3000000000001,
+                            749.0
+                          ]
+                        },
+                        {
+                          "p": [
+                            705.3000000000001,
+                            1111.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            548.7,
+                            1111.5
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 156.60000000000002,
+                  "h": 362.5,
+                  "radii": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    548.7,
+                    749.0
+                  ]
+                }
+              }
+            },
+            {
+              "id": 258,
+              "name": "wc-ribbon-lip",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.78431374,
+                              "b": 0.56078434
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.95686275,
+                              "b": 0.87058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.78431374,
+                              "b": 0.56078434
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 0.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "none"
+                    },
+                    "width": 0.0
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            548.7,
+                            676.5
+                          ],
+                          "in": [
+                            542.2934969019628,
+                            676.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            705.3000000000001,
+                            676.5
+                          ],
+                          "out": [
+                            711.7065030980373,
+                            676.5
+                          ]
+                        },
+                        {
+                          "p": [
+                            716.9000000000001,
+                            688.1
+                          ],
+                          "in": [
+                            716.9000000000001,
+                            681.6934969019628
+                          ]
+                        },
+                        {
+                          "p": [
+                            716.9000000000001,
+                            740.3
+                          ],
+                          "out": [
+                            716.9000000000001,
+                            746.7065030980372
+                          ]
+                        },
+                        {
+                          "p": [
+                            705.3000000000001,
+                            751.9
+                          ],
+                          "in": [
+                            711.7065030980373,
+                            751.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            548.7,
+                            751.9
+                          ],
+                          "out": [
+                            542.2934969019628,
+                            751.9
+                          ]
+                        },
+                        {
+                          "p": [
+                            537.1,
+                            740.3
+                          ],
+                          "in": [
+                            537.1,
+                            746.7065030980372
+                          ]
+                        },
+                        {
+                          "p": [
+                            537.1,
+                            688.1
+                          ],
+                          "out": [
+                            537.1,
+                            681.6934969019628
+                          ]
+                        }
+                      ],
+                      "closed": true
+                    }
+                  ]
+                },
+                "live": {
+                  "shape": "rectangle",
+                  "w": 179.80000000000007,
+                  "h": 75.39999999999998,
+                  "radii": [
+                    11.6,
+                    11.6,
+                    11.6,
+                    11.6
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    537.1,
+                    676.5
+                  ]
+                }
+              }
+            },
+            {
+              "id": 259,
+              "name": "wc-seal-disc",
+              "appearance": {
+                "items": [
+                  {
+                    "kind": "fill",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.2901961,
+                              "g": 0.2901961,
+                              "b": 0.31764707
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 0.5,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.14901961,
+                              "g": 0.14901961,
+                              "b": 0.16470589
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.078431375,
+                              "g": 0.078431375,
+                              "b": 0.09019608
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    }
+                  },
+                  {
+                    "kind": "stroke",
+                    "paint": {
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.8235294,
+                              "b": 0.24705882
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 1.0,
+                              "g": 0.41568628,
+                              "b": 0.07058824
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
+                    },
+                    "width": 10.15
+                  }
+                ],
+                "effects": [
+                  {
+                    "id": "stylize.dropShadow",
+                    "params": {
+                      "blur": 14,
+                      "color": "#000000",
+                      "darkness": 100.0,
+                      "mode": "multiply",
+                      "opacity": 50,
+                      "shade": "color",
+                      "x": 0,
+                      "y": 10
+                    },
+                    "visible": true
+                  }
+                ]
+              },
+              "kind": {
+                "type": "path",
+                "path": {
+                  "subpaths": [
+                    {
+                      "anchors": [
+                        {
+                          "p": [
+                            482.0,
+                            905.5999999999999
+                          ],
+                          "in": [
+                            482.0,
+                            985.681288725465
+                          ],
+                          "out": [
+                            482.0,
+                            825.5187112745349
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            692.0,
-                            468.0
+                            627.0,
+                            760.6
                           ],
                           "in": [
-                            598.1115925287651,
-                            468.0
+                            546.9187112745349,
+                            760.6
                           ],
                           "out": [
-                            785.8884074712349,
-                            468.0
+                            707.0812887254651,
+                            760.6
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            862.0,
-                            508.0
+                            772.0,
+                            905.5999999999999
                           ],
                           "in": [
-                            862.0,
-                            485.90861000676824
+                            772.0,
+                            825.5187112745349
                           ],
                           "out": [
-                            862.0,
-                            530.0913899932318
+                            772.0,
+                            985.681288725465
                           ],
                           "kind": "Smooth"
                         },
                         {
                           "p": [
-                            692.0,
-                            548.0
+                            627.0,
+                            1050.6
                           ],
                           "in": [
-                            785.8884074712349,
-                            548.0
+                            707.0812887254651,
+                            1050.6
                           ],
                           "out": [
-                            598.1115925287651,
-                            548.0
+                            546.9187112745349,
+                            1050.6
                           ],
                           "kind": "Smooth"
                         }
@@ -394,8 +4765,8 @@
                 },
                 "live": {
                   "shape": "ellipse",
-                  "w": 340.0,
-                  "h": 80.0,
+                  "w": 290.0,
+                  "h": 289.9999999999999,
                   "pie": [
                     0.0,
                     360.0
@@ -405,26 +4776,22 @@
                     0.0,
                     0.0,
                     1.0,
-                    522.0,
-                    468.0
+                    482.0,
+                    760.6
                   ]
                 }
               }
             },
             {
-              "id": 7,
+              "id": 260,
+              "name": "wc-seal-ring",
+              "opacity": 0.5,
               "appearance": {
                 "items": [
                   {
                     "kind": "fill",
                     "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 1.0,
-                        "g": 0.70980394,
-                        "b": 0.18039216
-                      }
+                      "type": "none"
                     }
                   },
                   {
@@ -434,12 +4801,11 @@
                       "color": {
                         "model": "rgb",
                         "r": 1.0,
-                        "g": 0.7607843,
-                        "b": 0.12156863
+                        "g": 0.5411765,
+                        "b": 0.078431375
                       }
                     },
-                    "width": 14.0,
-                    "cap": "Round"
+                    "width": 3.62
                   }
                 ]
               },
@@ -451,52 +4817,133 @@
                       "anchors": [
                         {
                           "p": [
-                            552.0,
-                            490.0
-                          ]
+                            499.4,
+                            905.6
+                          ],
+                          "in": [
+                            499.4,
+                            976.0715340784093
+                          ],
+                          "out": [
+                            499.4,
+                            835.1284659215908
+                          ],
+                          "kind": "Smooth"
                         },
                         {
                           "p": [
-                            570.0,
-                            532.0
-                          ]
+                            627.0,
+                            778.0
+                          ],
+                          "in": [
+                            556.5284659215907,
+                            778.0
+                          ],
+                          "out": [
+                            697.4715340784091,
+                            778.0
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            754.5999999999999,
+                            905.6
+                          ],
+                          "in": [
+                            754.5999999999999,
+                            835.1284659215908
+                          ],
+                          "out": [
+                            754.5999999999999,
+                            976.0715340784093
+                          ],
+                          "kind": "Smooth"
+                        },
+                        {
+                          "p": [
+                            627.0,
+                            1033.2
+                          ],
+                          "in": [
+                            697.4715340784091,
+                            1033.2
+                          ],
+                          "out": [
+                            556.5284659215907,
+                            1033.2
+                          ],
+                          "kind": "Smooth"
                         }
                       ],
-                      "closed": false
+                      "closed": true
                     }
+                  ]
+                },
+                "live": {
+                  "shape": "ellipse",
+                  "w": 255.19999999999993,
+                  "h": 255.20000000000005,
+                  "pie": [
+                    0.0,
+                    360.0
+                  ],
+                  "xf": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    499.4,
+                    778.0
                   ]
                 }
               }
             },
             {
-              "id": 8,
+              "id": 261,
+              "name": "wc-seal-s-core",
               "appearance": {
                 "items": [
                   {
                     "kind": "fill",
                     "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 1.0,
-                        "g": 0.70980394,
-                        "b": 0.18039216
-                      }
+                      "type": "gradient",
+                      "gradient": {
+                        "kind": "Linear",
+                        "stops": [
+                          {
+                            "offset": 0.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.33333334,
+                              "g": 0.33333334,
+                              "b": 0.3647059
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          },
+                          {
+                            "offset": 1.0,
+                            "color": {
+                              "model": "rgb",
+                              "r": 0.20392157,
+                              "g": 0.20392157,
+                              "b": 0.22745098
+                            },
+                            "opacity": 1.0,
+                            "midpoint": 0.5
+                          }
+                        ]
+                      },
+                      "angle": 270.0
                     }
                   },
                   {
                     "kind": "stroke",
                     "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 1.0,
-                        "g": 0.7607843,
-                        "b": 0.12156863
-                      }
+                      "type": "none"
                     },
-                    "width": 14.0,
-                    "cap": "Round"
+                    "width": 0.0
                   }
                 ]
               },
@@ -508,96 +4955,38 @@
                       "anchors": [
                         {
                           "p": [
-                            682.0,
-                            470.0
+                            557.51,
+                            900.51
                           ]
                         },
                         {
                           "p": [
-                            676.0,
-                            518.0
+                            627.39,
+                            866.84
+                          ]
+                        },
+                        {
+                          "p": [
+                            696.49,
+                            909.51
+                          ]
+                        },
+                        {
+                          "p": [
+                            627.39,
+                            944.36
                           ]
                         }
                       ],
-                      "closed": false
+                      "closed": true
                     }
                   ]
                 }
               }
             },
             {
-              "id": 9,
-              "appearance": {
-                "items": [
-                  {
-                    "kind": "fill",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 1.0,
-                        "g": 0.70980394,
-                        "b": 0.18039216
-                      }
-                    }
-                  },
-                  {
-                    "kind": "stroke",
-                    "paint": {
-                      "type": "solid",
-                      "color": {
-                        "model": "rgb",
-                        "r": 1.0,
-                        "g": 0.7607843,
-                        "b": 0.12156863
-                      }
-                    },
-                    "width": 14.0,
-                    "cap": "Round"
-                  }
-                ]
-              },
-              "kind": {
-                "type": "path",
-                "path": {
-                  "subpaths": [
-                    {
-                      "anchors": [
-                        {
-                          "p": [
-                            792.0,
-                            515.0
-                          ]
-                        },
-                        {
-                          "p": [
-                            770.0,
-                            550.0
-                          ]
-                        }
-                      ],
-                      "closed": false
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      },
-      {
-        "id": 10,
-        "name": "Cinta superior",
-        "kind": {
-          "type": "layer",
-          "color": {
-            "Preset": 3
-          },
-          "template": false,
-          "printable": true,
-          "children": [
-            {
-              "id": 11,
+              "id": 262,
+              "name": "wc-seal-s-upper",
               "appearance": {
                 "items": [
                   {
@@ -639,24 +5028,7 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0,
-                    "join": "Round"
-                  }
-                ],
-                "effects": [
-                  {
-                    "id": "stylize.dropShadow",
-                    "params": {
-                      "blur": 18,
-                      "color": "#000000",
-                      "darkness": 100.0,
-                      "mode": "multiply",
-                      "opacity": 45,
-                      "shade": "color",
-                      "x": 0,
-                      "y": 10
-                    },
-                    "visible": true
+                    "width": 0.0
                   }
                 ]
               },
@@ -668,62 +5040,62 @@
                       "anchors": [
                         {
                           "p": [
-                            267.0,
-                            332.0
+                            557.51,
+                            853.53
                           ]
                         },
                         {
                           "p": [
-                            710.0,
-                            92.0
+                            644.23,
+                            806.55
                           ]
                         },
                         {
                           "p": [
-                            994.0,
-                            235.0
+                            699.82,
+                            834.54
                           ]
                         },
                         {
                           "p": [
-                            1000.0,
-                            265.0
+                            700.99,
+                            840.42
                           ]
                         },
                         {
                           "p": [
-                            967.0,
-                            272.0
+                            694.53,
+                            841.79
                           ]
                         },
                         {
                           "p": [
-                            942.0,
-                            272.0
+                            689.64,
+                            841.79
                           ]
                         },
                         {
                           "p": [
-                            830.0,
-                            374.0
+                            667.72,
+                            861.75
                           ]
                         },
                         {
                           "p": [
-                            800.0,
-                            312.0
+                            661.84,
+                            849.62
                           ]
                         },
                         {
                           "p": [
-                            624.0,
-                            400.0
+                            627.39,
+                            866.84
                           ]
                         },
                         {
                           "p": [
-                            267.0,
-                            572.0
+                            557.51,
+                            900.51
                           ]
                         }
                       ],
@@ -734,7 +5106,8 @@
               }
             },
             {
-              "id": 12,
+              "id": 263,
+              "name": "wc-seal-s-upper-fold",
               "appearance": {
                 "items": [
                   {
@@ -776,7 +5149,7 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0
+                    "width": 0.0
                   }
                 ]
               },
@@ -788,20 +5161,20 @@
                       "anchors": [
                         {
                           "p": [
-                            710.0,
-                            92.0
+                            644.23,
+                            806.55
                           ]
                         },
                         {
                           "p": [
-                            800.0,
-                            312.0
+                            661.84,
+                            849.62
                           ]
                         },
                         {
                           "p": [
-                            624.0,
-                            400.0
+                            627.39,
+                            866.84
                           ]
                         }
                       ],
@@ -810,23 +5183,10 @@
                   ]
                 }
               }
-            }
-          ]
-        }
-      },
-      {
-        "id": 13,
-        "name": "Cinta inferior",
-        "kind": {
-          "type": "layer",
-          "color": {
-            "Preset": 4
-          },
-          "template": false,
-          "printable": true,
-          "children": [
+            },
             {
-              "id": 14,
+              "id": 264,
+              "name": "wc-seal-s-lower",
               "appearance": {
                 "items": [
                   {
@@ -868,24 +5228,7 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0,
-                    "join": "Round"
-                  }
-                ],
-                "effects": [
-                  {
-                    "id": "stylize.dropShadow",
-                    "params": {
-                      "blur": 18,
-                      "color": "#000000",
-                      "darkness": 100.0,
-                      "mode": "multiply",
-                      "opacity": 45,
-                      "shade": "color",
-                      "x": 0,
-                      "y": 10
-                    },
-                    "visible": true
+                    "width": 0.0
                   }
                 ]
               },
@@ -897,62 +5240,62 @@
                       "anchors": [
                         {
                           "p": [
-                            977.0,
-                            864.0
+                            696.49,
+                            957.67
                           ]
                         },
                         {
                           "p": [
-                            534.0,
-                            1104.0
+                            609.77,
+                            1004.65
                           ]
                         },
                         {
                           "p": [
-                            250.0,
-                            961.0
+                            554.18,
+                            976.66
                           ]
                         },
                         {
                           "p": [
-                            244.0,
-                            931.0
+                            553.01,
+                            970.78
                           ]
                         },
                         {
                           "p": [
-                            277.0,
-                            924.0
+                            559.47,
+                            969.41
                           ]
                         },
                         {
                           "p": [
-                            302.0,
-                            924.0
+                            564.36,
+                            969.41
                           ]
                         },
                         {
                           "p": [
-                            414.0,
-                            822.0
+                            586.28,
+                            949.45
                           ]
                         },
                         {
                           "p": [
-                            444.0,
-                            884.0
+                            592.16,
+                            961.58
                           ]
                         },
                         {
                           "p": [
-                            620.0,
-                            796.0
+                            626.61,
+                            944.36
                           ]
                         },
                         {
                           "p": [
-                            977.0,
-                            624.0
+                            696.49,
+                            910.69
                           ]
                         }
                       ],
@@ -963,7 +5306,8 @@
               }
             },
             {
-              "id": 15,
+              "id": 265,
+              "name": "wc-seal-s-lower-fold",
               "appearance": {
                 "items": [
                   {
@@ -1005,7 +5349,7 @@
                     "paint": {
                       "type": "none"
                     },
-                    "width": 14.0
+                    "width": 0.0
                   }
                 ]
               },
@@ -1017,20 +5361,20 @@
                       "anchors": [
                         {
                           "p": [
-                            534.0,
-                            1104.0
+                            609.77,
+                            1004.65
                           ]
                         },
                         {
                           "p": [
-                            444.0,
-                            884.0
+                            592.16,
+                            961.58
                           ]
                         },
                         {
                           "p": [
-                            620.0,
-                            796.0
+                            626.61,
+                            944.36
                           ]
                         }
                       ],
@@ -1976,7 +6320,7 @@
     },
     "raster_effects_ppi": 72.0,
     "images": {},
-    "next_id": 16,
+    "next_id": 266,
     "metadata": {
       "author": "",
       "authorTitle": "",
@@ -1986,8 +6330,8 @@
       "copyrightStatus": "unknown",
       "copyrightNotice": "",
       "copyrightUrl": "",
-      "created": 1793184424,
-      "modified": 1793184424
+      "created": 1793299769,
+      "modified": 1793299964
     },
     "last_view": {
       "name": "",
@@ -1995,12 +6339,9 @@
         "x": 627.0,
         "y": 627.0
       },
-      "zoom": 0.3963317384370016,
+      "zoom": 0.6507177033492823,
       "rotation": 0.0
-    },
-    "layers_open": [
-      1
-    ]
+    }
   },
   "images": {}
 }
