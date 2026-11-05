@@ -4,6 +4,17 @@ All notable changes to this repository are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [3.0.1] - 2026-11-05
+
+### Added
+
+- `heroes/`, the background image of eleven apps, each in its own folder with `.jpg`, `.svg`, `.psd` and `.vectorcraft`: Store, AppImage Manager, GRUB Editor, Layout Switcher, Plymouth Manager, Repo Selector, Sys Cleaner, System Service, WebApp Manager, Welcome and Welcome Live.
+- `application-x-soplos-theme.svg` in `soplos-theme-manager-3.0/`, the icon of the `.sth` theme files of Theme Manager.
+
+### Changed
+
+- New icon of Welcome: an open box with the S seal. The `.svg`, `.png`, `.psd` and `.vectorcraft` files are replaced.
+
 ## [3.0.0] - 2026-10-28
 
 First version of the repository: the production icons for the Soplos Linux 3.0 apps, their presentation and the distro wallpapers.

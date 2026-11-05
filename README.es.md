@@ -73,6 +73,10 @@ En [`presentación/`](presentaci%C3%B3n) hay una presentación animada, en HTML,
 
 La carpeta [`wallpapers/`](wallpapers) contiene los 29 fondos de pantalla que lleva Soplos Linux, numerados de `001.jpg` a `029.jpg`. Todos son JPG de 3840 × 2160 px (4K, 16:9). Son copias de los instalados en `/usr/share/backgrounds/soplos`.
 
+## Heroes
+
+La carpeta [`heroes/`](heroes) contiene la imagen de fondo de once apps, una carpeta por app, cada una con los archivos `.jpg`, `.svg`, `.psd` y `.vectorcraft`.
+
 ## Estructura
 
 ```
@@ -80,6 +84,7 @@ soplos-artwork/
 ├── splash.png               imagen de cabecera de este README
 ├── soplos-<app>/            una carpeta por app: .svg, .png, .psd y .vectorcraft
 ├── wallpapers/              los 29 fondos de pantalla de Soplos (001.jpg … 029.jpg)
+├── heroes/                  imagen de fondo de once apps
 ├── presentación/            presentación en HTML (horizontal y vertical)
 ├── README.md                README en inglés
 ├── README.es.md             este README, en español

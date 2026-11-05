@@ -73,6 +73,10 @@ The [`presentación/`](presentaci%C3%B3n) folder holds an animated HTML presenta
 
 The [`wallpapers/`](wallpapers) folder holds the 29 wallpapers shipped with Soplos Linux, numbered `001.jpg` to `029.jpg`. All of them are JPG at 3840 × 2160 px (4K, 16:9). They are copies of the ones installed in `/usr/share/backgrounds/soplos`.
 
+## Heroes
+
+The [`heroes/`](heroes) folder holds the background image of eleven apps, one folder per app, each with the `.jpg`, `.svg`, `.psd` and `.vectorcraft` files.
+
 ## Structure
 
 ```
@@ -80,6 +84,7 @@ soplos-artwork/
 ├── splash.png               header image of this README
 ├── soplos-<app>/            one folder per app: .svg, .png, .psd and .vectorcraft
 ├── wallpapers/              the 29 Soplos wallpapers (001.jpg … 029.jpg)
+├── heroes/                  background image of eleven apps
 ├── presentación/            HTML presentation (horizontal and vertical)
 ├── README.md
 ├── README.es.md             Spanish version of this README
